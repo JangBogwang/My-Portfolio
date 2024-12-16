@@ -68,8 +68,8 @@ const links = [
     activeColor: 'bg-blue-100/30 text-blue-700'
   },
   {
-    route: '/about',
-    title: 'About',
+    route: '/Experience',
+    title: 'Experience',
     hoverColor: 'hover:bg-green-50 hover:text-green-600',
     activeColor: 'bg-green-100/30 text-green-700'
   },

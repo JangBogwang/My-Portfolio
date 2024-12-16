@@ -6,7 +6,7 @@ import Links from '../views/Links.vue';
 
 const routes = [
   { path: '/', component: Main },
-  { path: '/about', component: About },
+  { path: '/Experience', component: About },
   { path: '/project', component: Project },
   { path: '/links', component: Links },
 ];
