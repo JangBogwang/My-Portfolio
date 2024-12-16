@@ -37,6 +37,7 @@
                 <ul class="space-y-2 text-lg">
                   <li>• Yolo v4를 활용한 영상 처리</li>
                   <li>• Jetson Nano 하드웨어를 활용한 시스템 개발</li>
+                  <li>• 작물 인식(고추, 토마토) 및 병충해 확인</li>
                 </ul>
               </section>
               
@@ -70,7 +71,7 @@
       
               <section class="mb-8" >
                 <h2 class="text-2xl font-bold border-b-4 border-[#FF6B6B] pb-2 mb-4">
-                  시연 영상
+                  구현 결과
                 </h2>
                 <iframe 
                   src="https://www.youtube.com/embed/aIA7bUbfYXA?si=wPM1E02euJg3x5ps" 
@@ -85,7 +86,7 @@
               
               <section class="mb-8">
                 <h2 class="text-2xl font-bold border-b-4 border-[#FF6B6B] pb-2 mb-4">
-                  데이터 베이스 
+                  데이터 셋 
                 </h2>
                 <p class="text-lg">2024.04.05 ~ 2024.06.25</p>
               </section>

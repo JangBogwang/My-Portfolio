@@ -134,6 +134,14 @@
                           <span class="font-medium text-gray-800">최종학력 : 한양대학교 융합전자공학부 학사(졸업)</span>
                       </li>
 
+                      <!-- 알고리즘 -->
+                      <li class="flex items-center">
+                          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#4B2E2E] mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                              <path stroke-linecap="round" stroke-linejoin="round" d="M3 4a1 1 0 011-1h3.28c.75 0 1.46.31 1.96.84L12 7l2.76-3.16A2.75 2.75 0 0116.72 3H20a1 1 0 011 1v5.28c0 .75-.31 1.46-.84 1.96L17 12l3.16 2.76c.53.5.84 1.21.84 1.96V20a1 1 0 01-1 1h-3.28c-.75 0-1.46-.31-1.96-.84L12 17l-2.76 3.16A2.75 2.75 0 017.28 21H4a1 1 0 01-1-1v-3.28c0-.75.31-1.46.84-1.96L7 12 3.84 9.24A2.75 2.75 0 013 7.28V4z" />
+                          </svg>
+                          <span class="font-medium text-gray-800">관심 분야: 웹 개발, 생성형 AI</span> 
+                      </li>
+
                       <!-- 거주지 -->
                       <li class="flex items-center">
                           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#4B2E2E] mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">

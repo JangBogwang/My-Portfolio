@@ -58,7 +58,7 @@
           <ul class="space-y-6">
             <li class="flex justify-between items-center">
               <div>
-                <h5 class="font-bold text-lg">한양대 공과대학 학술동아리 바라미</h5>
+                <h5 class="font-bold text-lg">한양대학교 공과대학 학술동아리 바라미</h5>
                 <p class="text-sm text-[#5E4A4A]">전자공학 학술 활동, 정기 세미나 및 작품 전시</p>
               </div>
               <div class="bg-[#4B2E2E] text-white text-sm font-medium px-4 py-1 rounded-full">2016.04 - 2022.12</div>

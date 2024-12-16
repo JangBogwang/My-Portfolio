@@ -78,12 +78,6 @@ const links = [
     title: 'Projects',
     hoverColor: 'hover:bg-purple-50 hover:text-purple-600',
     activeColor: 'bg-purple-100/30 text-purple-700'
-  },
-  {
-    route: '/social',
-    title: 'Social',
-    hoverColor: 'hover:bg-red-50 hover:text-red-600',
-    activeColor: 'bg-red-100/30 text-red-700'
   }
 ];
 </script>
