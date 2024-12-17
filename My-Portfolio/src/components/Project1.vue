@@ -33,7 +33,7 @@
         </section>
 
         <section class="mb-8">
-                <h2 class="text-2xl font-bold border-b-4 border-[#88d66f] pb-2 mb-4">
+                <h2 class="text-2xl font-bold border-b-4 border-[#FF6B6B] pb-2 mb-4">
                   담당 역할  
                 </h2>
                 <ul class="space-y-2 text-lg">
