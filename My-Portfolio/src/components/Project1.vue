@@ -29,9 +29,18 @@
             <li>• 장보광 (백엔드, PM)</li>
             <li>• 김재석 (CI/CD, 백엔드)</li>
             <li>• 박규림 (프론트엔드, 데이터 분석)</li>
-            <li>• 내 역할 : 콘텐츠 데이터 크롤링 코드 개발,추천 서버 개발, 프로젝트 관리, 데이터 Read 서버 개발</li>
           </ul>
         </section>
+
+        <section class="mb-8">
+                <h2 class="text-2xl font-bold border-b-4 border-[#88d66f] pb-2 mb-4">
+                  담당 역할  
+                </h2>
+                <ul class="space-y-2 text-lg">
+                  <li>• PM: 프로젝트 일정 관리, 진행 상황 정리, 팀 내 소통 및 개발 내역 정리</li>
+                  <li>• 백엔드 : 콘텐츠 데이터 크롤링 코드 개발,추천 서버 개발, 데이터 Read 서버 개발 </li>
+                </ul>
+              </section>
 
         <section class="mb-8">
           <h2 class="text-2xl font-bold border-b-4 border-[#FF6B6B] pb-2 mb-4">
