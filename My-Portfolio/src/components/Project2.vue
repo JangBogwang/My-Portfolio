@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen bg-gradient-to-br from-[#FFF7F0] to-[#FFE6D0] text-[#4A3737] px-4 py-12">
+  <div class="min-h-screen text-[#4A3737] px-4 py-12">
     <div class="max-w-5xl mx-auto bg-white shadow-2xl rounded-3xl overflow-hidden">
       <div class="bg-gradient-to-r from-[#FFD93D] to-[#88d66f] p-8">
         <h1 class="text-4xl md:text-6xl font-extrabold text-white drop-shadow-lg">

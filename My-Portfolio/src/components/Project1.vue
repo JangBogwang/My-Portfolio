@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen bg-gradient-to-br from-[#FFF7F0] to-[#FFE6D0] text-[#4A3737] px-4 py-12">
+  <div class="min-h-screen text-[#4A3737] px-4 py-12">
     <div class="max-w-5xl mx-auto bg-white shadow-2xl rounded-3xl overflow-hidden">
       <div class="bg-gradient-to-r from-[#FF6B6B] to-[#FFD93D] p-8">
         <h1 class="text-4xl md:text-6xl font-extrabold text-white drop-shadow-lg">
@@ -18,6 +18,18 @@
           <p class="text-lg text-[#4A3737]">
             사용자 MBTI 및 콘텐츠 취향을 기반으로한 추천 서비스
           </p>
+          <a 
+          href="https://github.com/your-repository-link" 
+          target="_blank" 
+          class="absolute bottom-4 right-4 flex items-center space-x-2 text-white"
+        >
+          <img 
+            :src="githubIconUrl"
+            alt="GitHub" 
+            class="w-6 h-6"
+          />
+          <span class="text-sm font-medium">GitHub</span>
+        </a>
         </section>
         
         <section class="mb-8">
@@ -40,7 +52,7 @@
                   <li>• PM: 프로젝트 일정 관리, 진행 상황 정리, 팀 내 소통 및 개발 내역 정리</li>
                   <li>• 백엔드 : 콘텐츠 데이터 크롤링 코드 개발,추천 서버 개발, 데이터 Read 서버 개발 </li>
                 </ul>
-              </section>
+        </section>
 
         <section class="mb-8">
           <h2 class="text-2xl font-bold border-b-4 border-[#FF6B6B] pb-2 mb-4">
@@ -132,6 +144,7 @@
 </template>
 
 <script setup>
+const githubIconUrl = new URL('@/assets/icons/github.png', import.meta.url).href;
 const techStack = [
   {
     title: '언어',
