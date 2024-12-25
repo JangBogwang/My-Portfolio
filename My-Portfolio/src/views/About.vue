@@ -19,7 +19,7 @@
         
         <!-- 자격증 -->
         <section>
-          <h4 class="font-serif text-2xl text-[#4B2E2E] font-bold border-b-2 border-[#D9CBB6] pb-2 mb-6">자격증</h4>
+          <h4 class="font-serif text-2xl text-[#4B2E2E] font-bold border-b-2 border-[#D9CBB6] pb-2 mb-6">자격 & 인증</h4>
           <ul class="space-y-6">
             <li class="flex justify-between items-center">
               <div>

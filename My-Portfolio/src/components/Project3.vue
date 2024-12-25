@@ -35,8 +35,16 @@
                   담당 역할  
                 </h2>
                 <ul class="space-y-2 text-lg">
-                  <li>• 프론트 엔드 : 사이드 바, 식단 대시보드, 식단 관리, 식단 추천, 미니게임 </li>
-                  <li>• 백엔드 : JWT 인증, 식단 관리 기능, 미니게임, 사용자 정보, 생성형 AI를 활용한 챗봇 서버</li>
+                  <li>• 프론트 엔드: 사이드 바, 식단 대시보드, 식단 관리, 식단 추천, 미니게임 페이지 개발</li>
+                  <li>• 백엔드(spring boot)
+                    <ul>
+                      <li>&ensp;- jwt를 활용한 로그인 기능 구현.</li>
+                      <li>&ensp;- 식단 관리 CRUD.</li>
+                      <li>&ensp;- 미니 게임 기능 구현</li>
+                      <li>&ensp;- MongoDb에 저장된 식품 데이터 검색 기능 구현(유사도 기반)</li>
+                      <li>&ensp;- 생성형 AI를 활용한 챗봇 서버.</li> 
+                    </ul>
+                  </li>
                 </ul>
               </section>
       
@@ -50,6 +58,17 @@
                   <li>• 유사도 기반의 식단 메뉴 검색 기능 구현</li>
                   <li>• JPA를 활용한 DB 제어 </li>
                   <li>• 공공 데이터를 활용한 사용자 칼로리 계산</li>
+                </ul>
+              </section>
+
+              <section class="mb-8">
+                <h2 class="text-2xl font-bold border-b-4 border-[#88d66f] pb-2 mb-4">
+                프로젝트 성과
+                </h2>
+                <ul class="space-y-2 text-lg">
+                  <li>• 식품 데이터를 활용한 식단 관리 서비스 구현 </li>
+                  <li>• 섭취 칼로리 및 식품 데이터를 활용한 식단 추천 챗봇 구현. 프롬프트 최적화를 통한 성능 향상</li>
+                  <li>• 유사도 기반의 식단 메뉴 검색. 검색 이중화로 검색 시간 단축 4 ~ 5초 -> 0초대로 단축</li>
                 </ul>
               </section>
               
@@ -98,23 +117,25 @@
 
               <section class="mb-8">
                 <h2 class="text-2xl font-bold border-b-4 border-[#88d66f] pb-2 mb-4">
+                  유저 플로우 
+                </h2>
+                <img src="@/assets/image/Project3/userflow.png" style="width: 70%; height:auto; margin: 0 auto;">
+              </section>
+
+              <!-- 
+              <section class="mb-8">
+                <h2 class="text-2xl font-bold border-b-4 border-[#88d66f] pb-2 mb-4">
                   챗봇 시퀀스 다이어그램 
                 </h2>
                 <img src="@/assets/image/Project3/chatbot.png" style="width: 90%; height:auto; margin: 0 auto;">
               </section>
+              -->
 
               <section class="mb-8">
                 <h2 class="text-2xl font-bold border-b-4 border-[#88d66f] pb-2 mb-4">
                   식단 관리 시퀀스 다이어그램 
                 </h2>
                 <img src="@/assets/image/Project3/diet.png" style="width: 90%; height:auto; margin: 0 auto;">
-              </section>
-
-              <section class="mb-8">
-                <h2 class="text-2xl font-bold border-b-4 border-[#88d66f] pb-2 mb-4">
-                  유저 플로우 
-                </h2>
-                <img src="@/assets/image/Project3/userflow.png" style="width: 70%; height:auto; margin: 0 auto;">
               </section>
 
               <section class="mb-8">

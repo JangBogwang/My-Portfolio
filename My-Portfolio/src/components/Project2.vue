@@ -22,11 +22,14 @@
         
         <section class="mb-8">
           <h2 class="text-2xl font-bold border-b-4 border-[#FFD93D] pb-2 mb-4">
-            프로젝트 멤버
+            담당 역할 
           </h2>
           <ul class="space-y-2 text-lg">
-            <li>• 장보광 (영상 인식 모델 개발, 학습 데이터 수집)</li>
-            <li>• 팀원 (데이터 학습, 모델 변환 코드 개발)</li>
+            <li>• 데이터 수집: AI HUB, Kaggle, 사진 촬영</li>
+            <li>• 데이터 전처리: Roboflow, 이미지 라벨링</li>
+            <li>• 데이터 학습: Yolo v4 모델 활용한 이미지 학습</li>
+            <li>• Jetson: 실시간 카메라 영상을 분석해 결과를 출력하는 코드 작성</li>
+            <li>• apahe를 활용한 결과 출력 서버 구현</li>
           </ul>
         </section>
 
@@ -38,6 +41,17 @@
             <li>• YOLO v4를 활용한 영상 처리</li>
             <li>• Jetson Nano 하드웨어를 활용한 시스템 개발</li>
             <li>• 작물 인식(고추, 토마토) 및 병충해 확인</li>
+          </ul>
+        </section>
+
+        <section class="mb-8">
+          <h2 class="text-2xl font-bold border-b-4 border-[#FFD93D] pb-2 mb-4">
+            프로잭트 성과 
+          </h2>
+          <ul class="space-y-2 text-lg">
+            <li>• 병충해 인식 시 결과 출력</li>
+            <li>• 작물(토마토)의 색을 바탕으로 성장 정도 확인</li>
+            <li>• Jetson nano 보드 상에서 yolo v4 모델을 활용한 이미지 인식 AI 개발</li>
           </ul>
         </section>
         
