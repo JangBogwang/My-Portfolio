@@ -39,7 +39,6 @@
                   <li>• 백엔드(spring boot)
                     <ul>
                       <li>&ensp;- jwt를 활용한 로그인 기능 구현.</li>
-                      <li>&ensp;- 식단 관리 CRUD.</li>
                       <li>&ensp;- 미니 게임 기능 구현</li>
                       <li>&ensp;- MongoDb에 저장된 식품 데이터 검색 기능 구현(유사도 기반)</li>
                       <li>&ensp;- 생성형 AI를 활용한 챗봇 서버.</li> 
