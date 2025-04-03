@@ -55,7 +55,7 @@
 
 <script setup>
 import { RouterLink } from 'vue-router';
-import profileImage from '@/assets/image/codingegg.png';
+import profileImage from '@/assets/image/profile.jpg';
 
 const name = 'Jang Bo Gwang';
 const jobTitle = 'Web Developer';
@@ -66,14 +66,7 @@ const links = [
     title: 'Home',
     hoverColor: 'hover:bg-blue-50 hover:text-blue-600',
     activeColor: 'bg-blue-100/30 text-blue-700'
-  },
-  {
-    route: '/Experience',
-    title: 'Experience',
-    hoverColor: 'hover:bg-green-50 hover:text-green-600',
-    activeColor: 'bg-green-100/30 text-green-700'
-  },
-  {
+  },{
     route: '/project',
     title: 'Projects',
     hoverColor: 'hover:bg-purple-50 hover:text-purple-600',
