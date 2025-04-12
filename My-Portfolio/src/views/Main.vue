@@ -1,8 +1,6 @@
 <template>
     <div class="min-h-screen w-full bg-[#FAF4EE] font-sans text-[#4B2E2E] flex justify-center py-10 px-4">
       <div class="max-w-5xl w-full rounded-xl overflow-hidden flex flex-col">
-        
-        
         <!-- 연락처 정보 바 (두 줄, grid-cols-2) -->
         <div class="bg-[#4B2E2E] text-white rounded-xl p-4 mx-8 mt-8 z-10 shadow-lg">
         <div class="grid grid-cols-2 gap-4">
@@ -68,46 +66,6 @@
           <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
             <!-- Education & Experience (오른쪽 컬럼) -->
             <div>
-              <!-- 인적사항 -->
-              <div class="mb-8">
-                  <h4 class="font-serif text-xl text-[#4B2E2E] font-bold border-b border-[#D9CBB6] pb-2 mb-4">Information</h4>
-                  <ul class="space-y-4 text-gray-700 leading-relaxed">
-                      <!-- 생년월일 -->
-                      <li class="flex items-center">
-                          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#4B2E2E] mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                              <path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10m4 5a2 2 0 01-2 2H5a2 2 0 01-2-2V10a2 2 0 012-2h14a2 2 0 012 2v6z" />
-                          </svg>
-                          <span class="font-medium text-gray-800">생년월일 : 1997.11.07</span> 
-                      </li>
-                      
-                      <!-- MBTI -->
-                      <li class="flex items-center">
-                          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#4B2E2E] mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                              <path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4H9m4 0h2v-2a1 1 0 10-2 0v2zM3 20h12a1 1 0 001-1v-9a1 1 0 00-1-1H3a1 1 0 00-1 1v9a1 1 0 001 1zm3-10V6a3 3 0 016 0v4" />
-                          </svg>
-                          <span class="font-medium text-gray-800">MBTI : INTP</span> 
-                      </li>
-                      
-                      <!-- 취미 -->
-                      <li class="flex items-center">
-                          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#4B2E2E] mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                              <path stroke-linecap="round" stroke-linejoin="round" d="M12 20l9-5-9-5-9 5 9 5zm0-10l9-5-9-5-9 5 9 5z" />
-                          </svg>
-                          <span class="font-medium text-gray-800">취미 : 독서, 글쓰기</span>
-                      </li>
-
-                      <!-- 알고리즘 -->
-                      <li class="flex items-center">
-                          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-[#4B2E2E] mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                              <path stroke-linecap="round" stroke-linejoin="round" d="M3 4a1 1 0 011-1h3.28c.75 0 1.46.31 1.96.84L12 7l2.76-3.16A2.75 2.75 0 0116.72 3H20a1 1 0 011 1v5.28c0 .75-.31 1.46-.84 1.96L17 12l3.16 2.76c.53.5.84 1.21.84 1.96V20a1 1 0 01-1 1h-3.28c-.75 0-1.46-.31-1.96-.84L12 17l-2.76 3.16A2.75 2.75 0 017.28 21H4a1 1 0 01-1-1v-3.28c0-.75.31-1.46.84-1.96L7 12 3.84 9.24A2.75 2.75 0 013 7.28V4z" />
-                          </svg>
-                          <span class="font-medium text-gray-800">관심 분야: 웹 개발, 생성형 AI</span> 
-                      </li>
-                  </ul>
-              </div>
-
-
-
               <!-- Authentication -->
               <div >
                   <h4 class="font-serif text-xl text-[#4B2E2E] font-bold border-b border-[#D9CBB6] pb-2 mb-4 mt-3">어학 & 자격</h4>  
@@ -200,118 +158,8 @@
                       </div>
                   </div>
               </div>
-
-
-            </div>
-
-            <!-- Skills & Languages & Reference (왼쪽 컬럼) -->
-            <div>
-              <!-- Skills -->
-              <div class="mb-8 skills-container">
-                    <h4 class="font-serif text-xl text-[#4B2E2E] font-bold border-b border-[#D9CBB6] pb-2 mb-4">Skills</h4>
-                    <!-- 카테고리별 스킬 -->
-                    <div class="space-y-6">
-                        <!-- 프로그래밍 언어 -->
-                        <div>
-                        <h5 class="text-lg font-semibold text-[#4B2E2E] mb-3">언어 (Language)</h5>
-                        <div class="grid grid-cols-1 gap-3">
-                            <div class="skill-item">
-                            <img src="@/assets/icons/java.png" alt="Java" class="w-6 h-6">
-                            <div>
-                                <h6 class="font-bold">Java</h6>
-                                <p class="text-sm text-gray-700">Backend, Spring Boot 개발, JPA 쿼리 구현</p>
-                            </div>
-                            </div>
-                            <div class="skill-item">
-                            <img src="@/assets/icons/python.png" alt="Python" class="w-6 h-6">
-                            <div>
-                                <h6 class="font-bold">Python</h6>
-                                <p class="text-sm text-gray-700">FastAPI 서버 개발, 데이터 크롤링</p>
-                            </div>
-                            </div>
-                            <div class="skill-item">
-                            <img src="@/assets/icons/c.png" alt="C" class="w-6 h-6">
-                            <div>
-                                <h6 class="font-bold">C언어</h6>
-                                <p class="text-sm text-gray-700">AVR 보드 하드웨어 제어</p>
-                            </div>
-                            </div>
-                            <div class="skill-item">
-                            <img src="@/assets/icons/javascript.png" alt="JavaScript" class="w-6 h-6">
-                            <div>
-                                <h6 class="font-bold">JavaScript</h6>
-                                <p class="text-sm text-gray-700">Vue.js, Node.js 개발</p>
-                            </div>
-                            </div>
-                        </div>
-                        </div>
-
-                        <!-- 프레임워크 -->
-                        <div>
-                        <h5 class="text-lg font-semibold text-[#4B2E2E] mb-3">프레임워크 (Framework)</h5>
-                        <div class="grid grid-cols-1 gap-3">
-                            <div class="skill-item">
-                            <img src="@/assets/icons/spring.png" alt="Spring" class="w-6 h-6">
-                            <div>
-                                <h6 class="font-bold">Spring Boot</h6>
-                                <p class="text-sm text-gray-700">CRUD/JWT 인증 구현, MyBatis/JPA 활용</p>
-                            </div>
-                            </div>
-                            <div class="skill-item">
-                            <img src="@/assets/icons/vue.png" alt="Vue.js" class="w-6 h-6">
-                            <div>
-                                <h6 class="font-bold">Vue.js</h6>
-                                <p class="text-sm text-gray-700">컴포넌트 기반 개발, Vue-Router 활용</p>
-                            </div>
-                            </div>
-                            <div class="skill-item">
-                            <img src="@/assets/icons/fastapi.png" alt="FastAPI" class="w-6 h-6">
-                            <div>
-                                <h6 class="font-bold">FastAPI</h6>
-                                <p class="text-sm text-gray-700">비동기 서버, ML 추천/생성형 AI 챗봇 서버 개발</p>
-                            </div>
-                            </div>
-                        </div>
-                        </div>
-
-                        <!-- 데이터베이스 + 기타 툴 (통합) -->
-                        <div>
-                        <h5 class="text-lg font-semibold text-[#4B2E2E] mb-3">DB & 개발 도구</h5>
-                        <div class="grid grid-cols-2 gap-3">
-                            <div class="skill-item">
-                            <img src="@/assets/icons/mysql.png" alt="MySQL" class="w-6 h-6">
-                            <div>
-                                <h6 class="font-bold">MySQL</h6>
-                                <p class="text-sm text-gray-700">기본 SQL 활용</p>
-                            </div>
-                            </div>
-                            <div class="skill-item">
-                            <img src="@/assets/icons/mongodb.png" alt="MongoDB" class="w-6 h-6">
-                            <div>
-                                <h6 class="font-bold">MongoDB</h6>
-                                <p class="text-sm text-gray-700">비정형 데이터/JPA 활용</p>
-                            </div>
-                            </div>
-                            <div class="skill-item">
-                            <img src="@/assets/icons/git.png" alt="Git" class="w-6 h-6">
-                            <div>
-                                <h6 class="font-bold">Git</h6>
-                                <p class="text-sm text-gray-700">협업, CI/CD</p>
-                            </div>
-                            </div>
-                            <div class="skill-item">
-                            <img src="@/assets/icons/docker.png" alt="Docker" class="w-6 h-6">
-                            <div>
-                                <h6 class="font-bold">Docker</h6>
-                                <p class="text-sm text-gray-700">컨테이너화, 배포</p>
-                            </div>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-
-                    <!-- Education -->
-              <div >
+                                  <!-- Education -->
+                                  <div >
                   <h4 class="font-serif text-xl text-[#4B2E2E] font-bold border-b border-[#D9CBB6] pb-2 mb-4 mt-8">대외활동</h4>
                   
                   <!-- 한양대학교 -->
@@ -329,15 +177,26 @@
                   <div class="flex justify-between items-start mb-6">
                       <div>
                           <h5 class="font-bold text-[#4B2E2E] text-lg">한양학술타운</h5>
-                          <p class="text-sm text-[#5E4A4A] mt-1">데이터 분석 및 PYTHON 웹 개발 교육 과정</p>
+                          <p class="text-sm text-[#5E4A4A] mt-1">재학생 연구 지원, SOC 로봇워 공모전 참여</p>
                       </div>
                       <div class="bg-[#4B2E2E] text-white text-sm font-medium px-4 py-1 rounded-full">
-                          2023.12 - 2024.06
+                         2017.06 - 2017.12
+                      </div>
+                  </div>
+
+                    <!-- 위니브 엠베서더 -->
+                    <div class="flex justify-between items-start mb-6">
+                      <div>
+                          <h5 class="font-bold text-[#4B2E2E] text-lg">위니브 엠베서더</h5>
+                          <p class="text-sm text-[#5E4A4A] mt-1">IT 교육 콘텐츠 기자단 활동동</p>
+                      </div>
+                      <div class="bg-[#4B2E2E] text-white text-sm font-medium px-4 py-1 rounded-full">
+                          2024.07 - 진행 중
                       </div>
                   </div>
 
                   <!-- SSAFY -->
-                  <div class="flex justify-between items-start">
+                  <div class="flex justify-between items-start mb-6">
                       <div>
                           <h5 class="font-bold text-[#4B2E2E] text-lg">SSAFY 12기</h5>
                           <p class="text-sm text-[#5E4A4A] mt-1">종합 소프트웨어 역량 강화를 위한 교육 과정</p>
@@ -346,7 +205,165 @@
                           2024.07 - 진행 중
                       </div>
                   </div>
+
+                  <!-- SSAFY -->
+                  <div class="flex justify-between items-start mb-6">
+                      <div>
+                          <h5 class="font-bold text-[#4B2E2E] text-lg">SSAFYcial</h5>
+                          <p class="text-sm text-[#5E4A4A] mt-1">SSAFY 소개 및 IT 관련 기사 작성성</p>
+                      </div>
+                      <div class="bg-[#4B2E2E] text-white text-sm font-medium px-4 py-1 rounded-full">
+                          2024.08 - 진행 중
+                      </div>
+                  </div>
               </div>
+            </div>
+
+            <!-- Skills & Languages & Reference (왼쪽 컬럼) -->
+            <div>
+              <!-- Skills -->
+              <div class="mb-8 skills-container">
+                    <h4 class="font-serif text-xl text-[#4B2E2E] font-bold border-b border-[#D9CBB6] pb-2 mb-4">Skills</h4>
+                    <!-- 카테고리별 스킬 -->
+                    <div class="space-y-6">
+                        <!-- 프로그래밍 언어 -->
+                        <div>
+                        <h5 class="text-lg font-semibold text-[#4B2E2E] mb-3">언어 (Language)</h5>
+                        <div class="grid grid-cols-2 gap-3">
+                            <div class="skill-item">
+                            <img src="@/assets/icons/java.png" alt="Java" class="w-10 h-10">
+                            <div>
+                                <h6 class="font-bold">Java</h6>
+                                <p class="text-sm text-gray-700">Backend, Spring Boot 개발 3회, JPA 쿼리 구현</p>
+                            </div>
+                            </div>
+                            <div class="skill-item">
+                            <img src="@/assets/icons/python.png" alt="Python" class="w-10 h-10">
+                            <div>
+                                <h6 class="font-bold">Python</h6>
+                                <p class="text-sm text-gray-700">FastAPI 서버 개발 3회, 데이터 크롤링 2회 경험</p>
+                            </div>
+                            </div>
+                            <div class="skill-item">
+                            <img src="@/assets/icons/c.png" alt="C" class="w-10 h-10">
+                            <div>
+                                <h6 class="font-bold">C언어</h6>
+                                <p class="text-sm text-gray-700">AVR 보드 하드웨어 제어</p>
+                            </div>
+                            </div>
+                            <div class="skill-item">
+                            <img src="@/assets/icons/javascript.png" alt="JavaScript" class="w-10 h-10">
+                            <div>
+                                <h6 class="font-bold">JavaScript</h6>
+                                <p class="text-sm text-gray-700">Vue.js, Node.js 개발</p>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- 프레임워크 -->
+                        <div>
+                        <h5 class="text-lg font-semibold text-[#4B2E2E] mb-3">프레임워크 (Framework)</h5>
+                        <div class="grid grid-cols-2 gap-3">
+                            <div class="skill-item">
+                            <img src="@/assets/icons/spring.png" alt="Spring" class="w-10 h-10">
+                            <div>
+                                <h6 class="font-bold">Spring Boot</h6>
+                                <p class="text-sm text-gray-700">CRUD/JWT 인증 구현, MyBatis/JPA 활용, 활용 프로젝트 3회 진행</p>
+                            </div>
+                            </div>
+                            <div class="skill-item">
+                            <img src="@/assets/icons/vue.png" alt="Vue.js" class="w-10 h-10">
+                            <div>
+                                <h6 class="font-bold">Vue.js</h6>
+                                <p class="text-sm text-gray-700">컴포넌트 기반 개발, Vue-Router 활용, pinia를 활용한 상태 관리</p>
+                            </div>
+                            </div>
+                            <div class="skill-item">
+                            <img src="@/assets/icons/fastapi.png" alt="FastAPI" class="w-10 h-10">
+                            <div>
+                                <h6 class="font-bold">FastAPI</h6>
+                                <p class="text-sm text-gray-700">활용 프로젝트 4회, 비동기 서버, ML 추천 서버 개발, 생성형 AI 챗봇 서버 개발, orm 활용</p>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+
+                        <!-- 데이터베이스 + 기타 툴 (통합) -->
+                        <div>
+                        <h5 class="text-lg font-semibold text-[#4B2E2E] mb-3">DB & 개발 도구</h5>
+                        <div class="grid grid-cols-2 gap-3">
+                            <div class="skill-item">
+                            <img src="@/assets/icons/mysql.png" alt="MySQL" class="w-10 h-10">
+                            <div>
+                                <h6 class="font-bold">MySQL</h6>
+                                <p class="text-sm text-gray-700">기본 SQL 활용</p>
+                            </div>
+                            </div>
+                            <div class="skill-item">
+                            <img src="@/assets/icons/mongodb.png" alt="MongoDB" class="w-10 h-10">
+                            <div>
+                                <h6 class="font-bold">MongoDB</h6>
+                                <p class="text-sm text-gray-700">비정형 데이터/JPA 활용</p>
+                            </div>
+                            </div>
+                            <div class="skill-item">
+                            <img src="@/assets/icons/mysql.png" alt="MySQL" class="w-10 h-10">
+                            <div>
+                                <h6 class="font-bold">PostgresSQL</h6>
+                                <p class="text-sm text-gray-700">기본 SQL 활용</p>
+                            </div>
+                            </div>
+                            <div class="skill-item">
+                            <img src="@/assets/icons/mysql.png" alt="MySQL" class="w-10 h-10">
+                            <div>
+                                <h6 class="font-bold">Redis</h6>
+                                <p class="text-sm text-gray-700">jwt 토큰 임시 저장으로 활용</p>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+
+                        <div>
+                        <h5 class="text-lg font-semibold text-[#4B2E2E] mb-3">인프라</h5>
+                        <div class="grid grid-cols-2 gap-3">
+                            <div class="skill-item">
+                            <img src="@/assets/icons/docker.png" alt="Docker" class="w-10 h-10">
+                            <div>
+                                <h6 class="font-bold">Docker</h6>
+                                <p class="text-sm text-gray-700">docker compose 활용 서버 구축,CI/CD 및 배포</p>
+                            </div>
+                            </div>
+                            <div class="skill-item">
+                            <img src="@/assets/icons/gitlabrunner.png" alt="Docker" class="w-10 h-10">
+                            <div>
+                                <h6 class="font-bold">GitLab</h6>
+                                <p class="text-sm text-gray-700">CI/CD 구축, Docker 이미지 빌드 후 EC2에 배포 경험</p>
+                            </div>
+                            </div>
+                        </div>
+                        </div>
+
+                        <div>
+                        <h5 class="text-lg font-semibold text-[#4B2E2E] mb-3">협업</h5>
+                        <div class="grid grid-cols-2 gap-3">
+                            <div class="skill-item">
+                            <img src="@/assets/icons/docker.png" alt="Docker" class="w-10 h-10">
+                            <div>
+                                <h6 class="font-bold">Jira</h6>
+                                <p class="text-sm text-gray-700">일정관리, 스프린트, 이슈관리</p>
+                            </div>
+                            </div>
+                            <div class="skill-item">
+                            <img src="@/assets/icons/git.png" alt="Git" class="w-10 h-10">
+                            <div>
+                               <h6 class="font-bold">Git</h6>
+                                <p class="text-sm text-gray-700">협업, 버전관리</p>
+                            </div>                             
+                            </div>
+                        </div>
+                        </div>
+                    </div>
               </div>
             </div>    
           </div>
