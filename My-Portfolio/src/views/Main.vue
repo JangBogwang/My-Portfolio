@@ -67,8 +67,8 @@
             <!-- Education & Experience (오른쪽 컬럼) -->
             <div>
               <!-- Authentication -->
-              <div >
-                  <h4 class="font-serif text-xl text-[#4B2E2E] font-bold border-b border-[#D9CBB6] pb-2 mb-4 mt-3">어학 & 자격</h4>  
+              <div class="mb-8 skills-container">
+                  <h4 class="font-serif text-xl text-[#4B2E2E] font-bold border-b border-[#D9CBB6] pb-2 mb-4">어학 & 자격</h4>  
                   <!-- 영어 -->
                   <div class="flex justify-between items-start mb-6">
                       <div>
@@ -158,8 +158,8 @@
                       </div>
                   </div>
               </div>
-                                  <!-- Education -->
-                                  <div >
+                <!-- Education -->
+                <div >
                   <h4 class="font-serif text-xl text-[#4B2E2E] font-bold border-b border-[#D9CBB6] pb-2 mb-4 mt-8">대외활동</h4>
                   
                   <!-- 한양대학교 -->
@@ -228,8 +228,8 @@
                     <div class="space-y-6">
                         <!-- 프로그래밍 언어 -->
                         <div>
-                        <h5 class="text-lg font-semibold text-[#4B2E2E] mb-3">언어 (Language)</h5>
-                        <div class="grid grid-cols-2 gap-3">
+                        <h5 class="text-lg font-semibold text-[#4B2E2E] mb-2">언어 (Language)</h5>
+                        <div class="grid grid-cols-2 gap-2">
                             <div class="skill-item">
                             <img src="@/assets/icons/java.png" alt="Java" class="w-10 h-10">
                             <div>
@@ -263,8 +263,8 @@
 
                         <!-- 프레임워크 -->
                         <div>
-                        <h5 class="text-lg font-semibold text-[#4B2E2E] mb-3">프레임워크 (Framework)</h5>
-                        <div class="grid grid-cols-2 gap-3">
+                        <h5 class="text-lg font-semibold text-[#4B2E2E] mb-2">프레임워크 (Framework)</h5>
+                        <div class="grid grid-cols-2 gap-2">
                             <div class="skill-item">
                             <img src="@/assets/icons/spring.png" alt="Spring" class="w-10 h-10">
                             <div>
@@ -291,8 +291,8 @@
 
                         <!-- 데이터베이스 + 기타 툴 (통합) -->
                         <div>
-                        <h5 class="text-lg font-semibold text-[#4B2E2E] mb-3">DB & 개발 도구</h5>
-                        <div class="grid grid-cols-2 gap-3">
+                        <h5 class="text-lg font-semibold text-[#4B2E2E] mb-2">DB</h5>
+                        <div class="grid grid-cols-2 gap-2">
                             <div class="skill-item">
                             <img src="@/assets/icons/mysql.png" alt="MySQL" class="w-10 h-10">
                             <div>
@@ -325,8 +325,8 @@
                         </div>
 
                         <div>
-                        <h5 class="text-lg font-semibold text-[#4B2E2E] mb-3">인프라</h5>
-                        <div class="grid grid-cols-2 gap-3">
+                        <h5 class="text-lg font-semibold text-[#4B2E2E] mb-2">인프라</h5>
+                        <div class="grid grid-cols-2 gap-2">
                             <div class="skill-item">
                             <img src="@/assets/icons/docker.png" alt="Docker" class="w-10 h-10">
                             <div>
@@ -345,8 +345,8 @@
                         </div>
 
                         <div>
-                        <h5 class="text-lg font-semibold text-[#4B2E2E] mb-3">협업</h5>
-                        <div class="grid grid-cols-2 gap-3">
+                        <h5 class="text-lg font-semibold text-[#4B2E2E] mb-2">협업</h5>
+                        <div class="grid grid-cols-2 gap-2">
                             <div class="skill-item">
                             <img src="@/assets/icons/docker.png" alt="Docker" class="w-10 h-10">
                             <div>
@@ -364,6 +364,8 @@
                         </div>
                         </div>
                     </div>
+
+                    <!-- 수상 경력  -->
               </div>
             </div>    
           </div>
