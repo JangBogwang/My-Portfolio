@@ -68,12 +68,11 @@
             <div>
               <!-- Authentication -->
               <div >
-                  <h4 class="font-serif text-xl text-[#4B2E2E] font-bold border-b border-[#D9CBB6] pb-2 mb-4 mt-3">어학 & 자격</h4>  
+                  <h4 class="font-serif text-xl text-[#4B2E2E] font-bold border-b border-[#D9CBB6] pb-2 mb-4">어학 & 자격</h4>  
                   <!-- 영어 -->
                   <div class="flex justify-between items-start mb-6">
                       <div>
-                          <h5 class="font-bold text-[#4B2E2E] text-lg">TOEIC Speaking</h5>
-                          <p class="text-sm text-[#5E4A4A] mt-1">등급: IM3 (130점)</p>
+                          <h5 class="font-bold text-[#4B2E2E] text-lg">TOEIC Speaking | 등급: IM3 (130점)</h5>
                       </div>
                       <div class="bg-[#4B2E2E] text-white text-sm font-medium px-4 py-1 rounded-full">
                           2025.03.11 취득
@@ -82,8 +81,7 @@
 
                   <div class="flex justify-between items-start mb-6">
                       <div>
-                          <h5 class="font-bold text-[#4B2E2E] text-lg">정보처리기사</h5>
-                          <p class="text-sm text-[#5E4A4A] mt-1">한국산업인력공단</p>
+                          <h5 class="font-bold text-[#4B2E2E] text-lg">정보처리기사 | 한국산업인력공단</h5>
                       </div>
                       <div class="bg-[#4B2E2E] text-white text-sm font-medium px-4 py-1 rounded-full">
                           2024.09.10 취득
@@ -92,8 +90,7 @@
 
                   <div class="flex justify-between items-start mb-6">
                       <div>
-                          <h5 class="font-bold text-[#4B2E2E] text-lg">SQL개발자(SQLD)</h5>
-                          <p class="text-sm text-[#5E4A4A] mt-1">한국데이터산업진흥원</p>
+                          <h5 class="font-bold text-[#4B2E2E] text-lg">SQLD | 한국데이터산업진흥원</h5>
                       </div>
                       <div class="bg-[#4B2E2E] text-white text-sm font-medium px-4 py-1 rounded-full">
                           2025.04.05 취득
@@ -102,8 +99,7 @@
 
                   <div class="flex justify-between items-start mb-6">
                       <div>
-                          <h5 class="font-bold text-[#4B2E2E] text-lg">ADsP(데이터분석준전문가)</h5>
-                          <p class="text-sm text-[#5E4A4A] mt-1">한국데이터산업진흥원</p>
+                          <h5 class="font-bold text-[#4B2E2E] text-lg">ADsP | 한국데이터산업진흥원</h5>
                       </div>
                       <div class="bg-[#4B2E2E] text-white text-sm font-medium px-4 py-1 rounded-full">
                           2025.03.22 취득
@@ -112,8 +108,7 @@
 
                   <div class="flex justify-between items-start mb-6">
                       <div>
-                          <h5 class="font-bold text-[#4B2E2E] text-lg">SW 역량테스트 B형</h5>
-                          <p class="text-sm text-[#5E4A4A] mt-1">삼성</p>
+                          <h5 class="font-bold text-[#4B2E2E] text-lg">SW 역량테스트 B형 | 삼성</h5>
                       </div>
                       <div class="bg-[#4B2E2E] text-white text-sm font-medium px-4 py-1 rounded-full">
                           2024.09.21 취득
@@ -158,8 +153,9 @@
                       </div>
                   </div>
               </div>
-                                  <!-- Education -->
-                                  <div >
+
+            <!-- Education -->
+            <div >
                   <h4 class="font-serif text-xl text-[#4B2E2E] font-bold border-b border-[#D9CBB6] pb-2 mb-4 mt-8">대외활동</h4>
                   
                   <!-- 한양대학교 -->
@@ -217,6 +213,32 @@
                       </div>
                   </div>
               </div>
+                          <!-- Prize -->
+            <div >
+                  <h4 class="font-serif text-xl text-[#4B2E2E] font-bold border-b border-[#D9CBB6] pb-2 mb-4 mt-8">수상</h4>
+                  
+                  <!-- 한양대학교 -->
+                  <div class="flex justify-between items-start mb-6">
+                      <div>
+                          <h5 class="font-bold text-[#4B2E2E] text-lg">LG 헬로비전 DX DATA School 프로젝트</h5>
+                          <p class="text-sm text-[#5E4A4A] mt-1">최우수상(MBTI에 따른 콘텐츠 추천 시스템 개발)</p>
+                      </div>
+                      <div class="bg-[#4B2E2E] text-white text-sm font-medium px-4 py-1 rounded-full">
+                          2024.06.26
+                      </div>
+                  </div>
+
+                  <!-- LG 헬로비전 -->
+                  <div class="flex justify-between items-start mb-6">
+                      <div>
+                          <h5 class="font-bold text-[#4B2E2E] text-lg">SSAFY 12기 1학기 파이널 프로젝트</h5>
+                          <p class="text-sm text-[#5E4A4A] mt-1">우수상(사용자 식단 관리 시스템 Nutrigo 프로젝트)</p>
+                      </div>
+                      <div class="bg-[#4B2E2E] text-white text-sm font-medium px-4 py-1 rounded-full">
+                         2024.11.29
+                      </div>
+                  </div>
+              </div>
             </div>
 
             <!-- Skills & Languages & Reference (왼쪽 컬럼) -->
@@ -225,11 +247,11 @@
               <div class="mb-8 skills-container">
                     <h4 class="font-serif text-xl text-[#4B2E2E] font-bold border-b border-[#D9CBB6] pb-2 mb-4">Skills</h4>
                     <!-- 카테고리별 스킬 -->
-                    <div class="space-y-6">
+                    <div class="space-y-4">
                         <!-- 프로그래밍 언어 -->
                         <div>
                         <h5 class="text-lg font-semibold text-[#4B2E2E] mb-3">언어 (Language)</h5>
-                        <div class="grid grid-cols-2 gap-3">
+                        <div class="grid grid-cols-2 gap-2">
                             <div class="skill-item">
                             <img src="@/assets/icons/java.png" alt="Java" class="w-10 h-10">
                             <div>
@@ -264,7 +286,7 @@
                         <!-- 프레임워크 -->
                         <div>
                         <h5 class="text-lg font-semibold text-[#4B2E2E] mb-3">프레임워크 (Framework)</h5>
-                        <div class="grid grid-cols-2 gap-3">
+                        <div class="grid grid-cols-2 gap-2">
                             <div class="skill-item">
                             <img src="@/assets/icons/spring.png" alt="Spring" class="w-10 h-10">
                             <div>
@@ -292,7 +314,7 @@
                         <!-- 데이터베이스 + 기타 툴 (통합) -->
                         <div>
                         <h5 class="text-lg font-semibold text-[#4B2E2E] mb-3">DB & 개발 도구</h5>
-                        <div class="grid grid-cols-2 gap-3">
+                        <div class="grid grid-cols-2 gap-2">
                             <div class="skill-item">
                             <img src="@/assets/icons/mysql.png" alt="MySQL" class="w-10 h-10">
                             <div>
@@ -308,14 +330,14 @@
                             </div>
                             </div>
                             <div class="skill-item">
-                            <img src="@/assets/icons/mysql.png" alt="MySQL" class="w-10 h-10">
+                            <img src="@/assets/icons/postgres.png" alt="MySQL" class="w-10 h-10">
                             <div>
                                 <h6 class="font-bold">PostgresSQL</h6>
                                 <p class="text-sm text-gray-700">기본 SQL 활용</p>
                             </div>
                             </div>
                             <div class="skill-item">
-                            <img src="@/assets/icons/mysql.png" alt="MySQL" class="w-10 h-10">
+                            <img src="@/assets/icons/redis.png" alt="MySQL" class="w-10 h-10">
                             <div>
                                 <h6 class="font-bold">Redis</h6>
                                 <p class="text-sm text-gray-700">jwt 토큰 임시 저장으로 활용</p>
@@ -326,7 +348,7 @@
 
                         <div>
                         <h5 class="text-lg font-semibold text-[#4B2E2E] mb-3">인프라</h5>
-                        <div class="grid grid-cols-2 gap-3">
+                        <div class="grid grid-cols-2 gap-2">
                             <div class="skill-item">
                             <img src="@/assets/icons/docker.png" alt="Docker" class="w-10 h-10">
                             <div>
@@ -341,14 +363,21 @@
                                 <p class="text-sm text-gray-700">CI/CD 구축, Docker 이미지 빌드 후 EC2에 배포 경험</p>
                             </div>
                             </div>
+                            <div class="skill-item">
+                            <img src="@/assets/icons/aws.png" alt="Docker" class="w-10 h-10">
+                            <div>
+                                <h6 class="font-bold">AWS</h6>
+                                <p class="text-sm text-gray-700">AWS EC2에 프로젝트 배포 경험</p>
+                            </div>
+                            </div>
                         </div>
                         </div>
 
                         <div>
                         <h5 class="text-lg font-semibold text-[#4B2E2E] mb-3">협업</h5>
-                        <div class="grid grid-cols-2 gap-3">
+                        <div class="grid grid-cols-2 gap-2">
                             <div class="skill-item">
-                            <img src="@/assets/icons/docker.png" alt="Docker" class="w-10 h-10">
+                            <img src="@/assets/icons/jira.png" alt="Docker" class="w-10 h-10">
                             <div>
                                 <h6 class="font-bold">Jira</h6>
                                 <p class="text-sm text-gray-700">일정관리, 스프린트, 이슈관리</p>
