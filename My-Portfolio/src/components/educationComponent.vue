@@ -1,7 +1,10 @@
 <template>
     <!-- Education -->
     <div >
-        <h4 class="font-serif text-xl text-[#4B2E2E] font-bold border-b border-[#D9CBB6] pb-2 mb-4 mt-3">Education</h4>
+        <h4 class="font-bold text-2xl text-[#3A3A3A] border-b-2 pb-2 mb-4 flex items-center">
+            <span class="w-2 h-6 bg-[#8B6E5E] mr-3 rounded"></span>
+            교육
+        </h4>
         
         <!-- 한양대학교 -->
         <div class="flex justify-between items-start mb-6">

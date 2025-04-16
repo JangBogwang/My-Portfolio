@@ -1,5 +1,5 @@
 <template>
-    <div class="min-h-screen w-full bg-[#FAF4EE] font-sans text-[#4B2E2E] flex justify-center py-10 px-4">
+    <div class="min-h-screen w-full bg-white font-sans text-[#4B2E2E] flex justify-center px-4">
       <div class="max-w-5xl w-full rounded-xl overflow-hidden flex flex-col">
         <!-- 연락처 정보 바 (두 줄, grid-cols-2) -->
         <div class="bg-[#4B2E2E] text-white rounded-xl p-4 mx-8 mt-8 z-10 shadow-lg">
@@ -63,17 +63,17 @@
 
         <!-- 아래 나머지 콘텐츠 -->
         <div class="p-8 md:p-12">
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <Skills></Skills>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-4">
             <!-- Education & Experience (오른쪽 컬럼) -->
             <div>
               <Certification></Certification>
               <Education></Education>
-              <Experience></Experience>
-              <Prize></Prize>
             </div>
             <!-- Skills & Languages & Reference (왼쪽 컬럼) -->
             <div>
-                <Skills></Skills>
+              <Experience></Experience>
+              <Prize></Prize>
             </div>    
           </div>
           <Project></Project>

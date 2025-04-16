@@ -30,20 +30,20 @@
 
 <script setup>
 import { ref } from "vue";
-import Project1 from '@/components/Project1.vue';
-import Project2 from '@/components/Project2.vue';
+import Project4 from '@/components/Project1.vue';
+import Project5 from '@/components/Project2.vue';
 import Project3 from '@/components/Project3.vue';
 import ProjectDetail from '@/components/ProjectDetail.vue';
 
 const projects = ref([
   {
     title: "MBTI에 따른 콘텐츠 추천서비스. MVTI",
-    component: Project1,
+    component: Project4,
     image: new URL('@/assets/icons/mvtilogo.png', import.meta.url).href
   },
   {
     title: "작물 인식 AI 모델 구축 프로젝트",
-    component: Project2,
+    component: Project5,
     image: new URL('@/assets/image/Project2/videoai.png', import.meta.url).href
   },
   {

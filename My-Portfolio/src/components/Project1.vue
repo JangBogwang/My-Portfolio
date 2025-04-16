@@ -38,13 +38,11 @@
         
         <section class="mb-8">
           <h2 class="text-2xl font-bold border-b-4 border-[#FF6B6B] pb-2 mb-4">
-            프로젝트 멤버
+            인원 및 기간 
           </h2>
           <ul class="space-y-2 text-lg">
-            <li>• 장성준 (팀장, 데이터 분석, 추천 모델 개발)</li>
-            <li>• 장보광 (백엔드, PM)</li>
-            <li>• 김재석 (CI/CD, 백엔드)</li>
-            <li>• 박규림 (프론트엔드, 데이터 분석)</li>
+            <li>• 인원: 4명</li>
+            <li>• 기간: 2024.04.05 ~ 2024.06.25</li>
           </ul>
         </section>
 
@@ -87,13 +85,6 @@
             <li>• 콘텐츠 데이터 텍스트 임베딩 후 MBTI 결과와 유사도 매칭</li>
             <li>• 영화 콘텐츠 DB 구축</li>
           </ul>
-        </section>
-        
-        <section class="mb-8">
-          <h2 class="text-2xl font-bold border-b-4 border-[#FF6B6B] pb-2 mb-4">
-            개발 기간
-          </h2>
-          <p class="text-lg">2024.04.05 ~ 2024.06.25</p>
         </section>
         
         <section class="mb-8">
