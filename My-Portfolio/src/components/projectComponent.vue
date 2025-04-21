@@ -1,6 +1,6 @@
 <template>
 <!-- 프로젝트 섹션 -->
-<section class="mt-4">
+<section class="mt-8">
   <h4 class="font-bold text-2xl text-[#3A3A3A] border-b-2 pb-2 mb-4 flex items-center">
       <span class="w-2 h-6 bg-[#8B6E5E] mr-3 rounded"></span>
       프로젝트
@@ -41,14 +41,6 @@
             <line x1="10" y1="14" x2="21" y2="3"></line>
           </svg>
         </a>
-        <a href="#" class="text-indigo-600 text-sm flex items-center hover:text-indigo-800">
-          <span class="mr-1">Detail</span>
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-            <polyline points="15 3 21 3 21 9"></polyline>
-            <line x1="10" y1="14" x2="21" y2="3"></line>
-          </svg>
-        </a>
       </div>
     </div>
     
@@ -82,14 +74,6 @@
             <line x1="10" y1="14" x2="21" y2="3"></line>
           </svg>
         </a>
-        <a href="#" class="text-indigo-600 text-sm flex items-center hover:text-indigo-800">
-          <span class="mr-1">Detail</span>
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-            <polyline points="15 3 21 3 21 9"></polyline>
-            <line x1="10" y1="14" x2="21" y2="3"></line>
-          </svg>
-        </a>
       </div>
     </div>
     
@@ -117,16 +101,8 @@
       </ul>
       
       <div class="mt-4 flex gap-3">
-        <a href="#" class="text-indigo-600 text-sm flex items-center hover:text-indigo-800">
+        <a href="https://github.com/ssafitjs" class="text-indigo-600 text-sm flex items-center hover:text-indigo-800">
           <span class="mr-1">Github</span>
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-            <polyline points="15 3 21 3 21 9"></polyline>
-            <line x1="10" y1="14" x2="21" y2="3"></line>
-          </svg>
-        </a>
-        <a href="#" class="text-indigo-600 text-sm flex items-center hover:text-indigo-800">
-          <span class="mr-1">Demo</span>
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
             <polyline points="15 3 21 3 21 9"></polyline>
@@ -162,14 +138,6 @@
       <div class="mt-4 flex gap-3">
         <a href="https://github.com/MVTI-MovieAndVideo-Recommender-Platform" class="text-indigo-600 text-sm flex items-center hover:text-indigo-800">
           <span class="mr-1">Github</span>
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-            <polyline points="15 3 21 3 21 9"></polyline>
-            <line x1="10" y1="14" x2="21" y2="3"></line>
-          </svg>
-        </a>
-        <a href="#" class="text-indigo-600 text-sm flex items-center hover:text-indigo-800">
-          <span class="mr-1">Demo</span>
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
             <polyline points="15 3 21 3 21 9"></polyline>
