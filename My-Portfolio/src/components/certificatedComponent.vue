@@ -8,7 +8,7 @@
       <div 
         v-for="cert in certificates" 
         :key="cert.id"
-        class="flex justify-between items-center p-4 border-l-4 border-[#6B4F4F] rounded bg-[#FAF6F0] hover:bg-[#F2EAE1] transition-all duration-200 shadow-sm"
+        class="flex justify-between items-start mb-6"
       >
         <div class="flex-1">
           <!-- 타이틀과 조직 분리 -->
