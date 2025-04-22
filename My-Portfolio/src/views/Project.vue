@@ -37,6 +37,11 @@ import ProjectDetail from '@/components/ProjectDetail.vue';
 
 const projects = ref([
   {
+    title: "AI로 추천받는 나만의 식단 관리.Nutrigo",
+    component: Project3,
+    image: new URL('@/assets/image/Project3/nutrigologo.png', import.meta.url).href
+  },
+  {
     title: "MBTI에 따른 콘텐츠 추천서비스. MVTI",
     component: Project4,
     image: new URL('@/assets/icons/mvtilogo.png', import.meta.url).href
@@ -45,11 +50,6 @@ const projects = ref([
     title: "작물 인식 AI 모델 구축 프로젝트",
     component: Project5,
     image: new URL('@/assets/image/Project2/videoai.png', import.meta.url).href
-  },
-  {
-    title: "AI로 추천받는 나만의 식단 관리.Nutrigo",
-    component: Project3,
-    image: new URL('@/assets/image/Project3/nutrigologo.png', import.meta.url).href
   }
 ]);
 

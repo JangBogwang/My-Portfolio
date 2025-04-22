@@ -3,7 +3,7 @@
     <!-- 섹션 헤더 (더 뚜렷한 구분선과 여백 추가) -->
     <h4 class="font-bold text-2xl text-[#3A3A3A] border-b-2 pb-2 mb-4 flex items-center">
             <span class="w-2 h-6 bg-[#8B6E5E] mr-3 rounded"></span>
-            교육
+            자격
         </h4>
     
     <!-- 인증서 목록 (간격 증가, 그림자 효과 추가) -->
@@ -33,9 +33,9 @@
 const certificates = [
   { 
     id: 1, 
-    title: 'TOEIC Speaking IM3 (130점)', 
-    organization: 'ETS',
-    date: '2025.03.11' 
+    title: 'SW 역량테스트 B형', 
+    organization: '삼성',
+    date: '2024.09.21' 
   },
   { 
     id: 2, 
@@ -54,12 +54,6 @@ const certificates = [
     title: 'ADsP', 
     organization: '한국데이터산업진흥원',
     date: '2025.03.22' 
-  },
-  { 
-    id: 5, 
-    title: 'SW 역량테스트 B형', 
-    organization: '삼성',
-    date: '2024.09.21' 
   }
 ];
 </script>
