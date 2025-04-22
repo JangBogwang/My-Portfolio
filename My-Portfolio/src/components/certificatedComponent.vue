@@ -1,14 +1,17 @@
 <template>
   <div class="mb-8">
     <!-- 섹션 헤더 (더 뚜렷한 구분선과 여백 추가) -->
-    <h4 class="font-serif text-2xl text-[#3A2723] font-bold border-b-2 border-[#C4B0A0] pb-3 mb-5">어학 & 자격</h4>
+    <h4 class="font-bold text-2xl text-[#3A3A3A] border-b-2 pb-2 mb-4 flex items-center">
+            <span class="w-2 h-6 bg-[#8B6E5E] mr-3 rounded"></span>
+            교육
+        </h4>
     
     <!-- 인증서 목록 (간격 증가, 그림자 효과 추가) -->
     <div class="space-y-3">
       <div 
         v-for="cert in certificates" 
         :key="cert.id"
-        class="flex justify-between items-center p-4 border-l-4 border-[#6B4F4F] rounded bg-[#FAF6F0] hover:bg-[#F2EAE1] transition-all duration-200 shadow-sm"
+        class="flex justify-between items-start mb-6"
       >
         <div class="flex-1">
           <!-- 타이틀과 조직 분리 -->
