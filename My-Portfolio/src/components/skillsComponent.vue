@@ -94,13 +94,13 @@
               <!-- 각 분야별 기술 스택 카드 -->
               <div v-for="skill in currentSkills" :key="skill.name" 
                   class="skill-card p-4 rounded-lg shadow-sm border-l-4" 
-                  :class="[getSkillCardBorderColor(skill.color)]">
+                  :class="[getCategoryBorderColor()]">
                 <div class="flex justify-between items-center mb-3">
-                  <h6 class="font-bold text-xl" :class="getSkillTitleColor(skill.color)">{{ skill.name }}</h6>
+                  <h6 class="font-bold text-xl" :class="getCategoryTextColor()">{{ skill.name }}</h6>
                   <div class="skill-level flex items-center">
                     <div class="flex space-x-1">
                       <div v-for="i in 5" :key="i" class="w-3 h-3 rounded-full" 
-                          :class="i <= skill.level ? skill.color : getSkillEmptyColor(skill.color)">
+                          :class="i <= skill.level ? getCategoryColor() : getCategoryEmptyColor()">
                       </div>
                     </div>
                   </div>
@@ -128,32 +128,64 @@ export default {
     return {
       modalVisible: false,
       currentCategory: '',
+      categoryColors: {
+        language: {
+          main: 'bg-[#4B7BEC]',
+          text: 'text-[#2E4374]',
+          empty: 'bg-[#D9D9E8]',
+          border: 'border-[#4B7BEC]'
+        },
+        framework: {
+          main: 'bg-[#6B46C1]',
+          text: 'text-[#44337A]',
+          empty: 'bg-[#DDD6F3]',
+          border: 'border-[#6B46C1]'
+        },
+        database: {
+          main: 'bg-[#2C7A7B]',
+          text: 'text-[#285E61]',
+          empty: 'bg-[#D4EDE7]',
+          border: 'border-[#2C7A7B]'
+        },
+        infrastructure: {
+          main: 'bg-[#DD6B21]',
+          text: 'text-[#9C4221]',
+          empty: 'bg-[#F8E0CC]',
+          border: 'border-[#DD6B21]'
+        },
+        collaboration: {
+          main: 'bg-[#3182CE]',
+          text: 'text-[#2C5282]',
+          empty: 'bg-[#D6E6F5]',
+          border: 'border-[#3182CE]'
+        }
+      },
       skills: {
         language: [
-          { name: 'Java', level: 4, color: 'bg-[#4B7BEC]', description: '알고리즘(백준 플레티넘, SW역량테스트 B형), 자바 OOP 개념에 대한 이해' },
-          { name: 'Python', level: 3, color: 'bg-[#38B2AC]', description: '데이터 분석 및 크롤링 진행, AI 프로젝트 경험' },
-          { name: 'C언어', level: 2, color: 'bg-[#E53E3E]', description: '자료구조 및 알고리즘 구현, 포인터와 메모리 관리 이해' },
-          { name: 'JavaScript', level: 3, color: 'bg-[#ED8936]', description: '웹 프론트엔드 개발, DOM 조작, 비동기 프로그래밍 이해' }
+          { name: 'Java', level: 4, description: '알고리즘(백준 플레티넘, SW역량테스트 B형), 자바 OOP 개념에 대한 이해' },
+          { name: 'Python', level: 3, description: '데이터 분석 및 크롤링 진행, AI 프로젝트 경험' },
+          { name: 'C언어', level: 2, description: '자료구조 및 알고리즘 구현, 포인터와 메모리 관리 이해' },
+          { name: 'JavaScript', level: 3, description: '웹 프론트엔드 개발, DOM 조작, 비동기 프로그래밍 이해' }
         ],
         framework: [
-          { name: 'Spring Boot', level: 4, color: 'bg-[#6B46C1]', description: 'CRUD/JWT 인증 구현, MyBatis/JPA 활용' },
-          { name: 'Vue.js', level: 3, color: 'bg-[#3182CE]', description: '컴포넌트 기반 UI 개발, Vuex 상태관리' },
-          { name: 'FastAPI', level: 3, color: 'bg-[#319795]', description: 'ORM 활용, LLM 활용 프로젝트 진행' }
+          { name: 'Spring Boot', level: 4, description: 'CRUD/JWT 인증 구현, MyBatis/JPA 활용' },
+          { name: 'Vue.js', level: 3, description: '컴포넌트 기반 UI 개발, Vuex 상태관리' },
+          { name: 'FastAPI', level: 3, description: 'ORM 활용, LLM 활용 프로젝트 진행' }
         ],
         database: [
-          { name: 'MySQL', level: 3, color: 'bg-[#319795]', description: '관계형 DB 설계, 쿼리 최적화' },
-          { name: 'MongoDB', level: 2, color: 'bg-[#48BB78]', description: 'NoSQL DB 활용, 비정형 데이터' },
-          { name: 'PostgreSQL', level: 2, color: 'bg-[#5A67D8]', description: '지리 정보, JSON 활용' },
-          { name: 'Redis', level: 2, color: 'bg-[#F56565]', description: '인메모리 캐싱, 세션 관리' }
+          { name: 'MySQL', level: 3, description: '관계형 DB 설계, 쿼리 최적화' },
+          { name: 'MongoDB', level: 2, description: 'NoSQL DB 활용, 비정형 데이터' },
+          { name: 'PostgreSQL', level: 2, description: '지리 정보, JSON 활용' },
+          { name: 'Redis', level: 2, description: '인메모리 캐싱, 세션 관리' }
         ],
         infrastructure: [
-          { name: 'Docker', level: 3, color: 'bg-[#DD6B21]', description: '컨테이너 관리, Docker compose 활용' },
-          { name: 'GitLab', level: 3, color: 'bg-[#805AD5]', description: 'CI/CD 파이프라인, EC2 배포' },
-          { name: 'AWS', level: 3, color: 'bg-[#F05252]', description: 'EC2, S3, RDS 운영' }
+          { name: 'Docker', level: 3, description: '컨테이너 관리, Docker compose 활용' },
+          { name: 'GitLab', level: 3, description: 'CI/CD 파이프라인, EC2 배포' },
+          { name: 'AWS', level: 3, description: 'EC2, S3, RDS 운영' }
         ],
         collaboration: [
-          { name: 'Jira', level: 4, color: 'bg-[#3182CE]', description: '애자일 이슈 관리' },
-          { name: 'Git', level: 4, color: 'bg-[#38A169]', description: 'Git Flow 브랜치 전략' }
+          { name: 'Jira', level: 4, description: '애자일 이슈 관리' },
+          { name: 'Git', level: 4, description: 'Git Flow 브랜치 전략' }
         ]
       }
     };
@@ -185,49 +217,17 @@ export default {
       // 모달이 닫힐 때 스크롤 허용
       document.body.style.overflow = 'auto';
     },
-    getSkillCardBorderColor(color) {
-      // bg-[#4B7BEC]에서 border-l-4 border-[#4B7BEC]로 변환
-      return color.replace('bg-', 'border-');
+    getCategoryColor() {
+      return this.categoryColors[this.currentCategory]?.main || 'bg-gray-400';
     },
-    getSkillTitleColor(color) {
-      // 색상 코드에 맞는 텍스트 색상 반환
-      const colorMap = {
-        'bg-[#4B7BEC]': 'text-[#2E4374]',
-        'bg-[#38B2AC]': 'text-[#285E61]',
-        'bg-[#E53E3E]': 'text-[#9B2C2C]',
-        'bg-[#ED8936]': 'text-[#9C4221]',
-        'bg-[#6B46C1]': 'text-[#44337A]',
-        'bg-[#3182CE]': 'text-[#2C5282]',
-        'bg-[#319795]': 'text-[#285E61]',
-        'bg-[#48BB78]': 'text-[#276749]',
-        'bg-[#5A67D8]': 'text-[#434190]',
-        'bg-[#F56565]': 'text-[#9B2C2C]',
-        'bg-[#DD6B21]': 'text-[#9C4221]',
-        'bg-[#805AD5]': 'text-[#553C9A]',
-        'bg-[#F05252]': 'text-[#9B1C1C]',
-        'bg-[#38A169]': 'text-[#276749]'
-      };
-      return colorMap[color] || 'text-gray-800';
+    getCategoryTextColor() {
+      return this.categoryColors[this.currentCategory]?.text || 'text-gray-800';
     },
-    getSkillEmptyColor(color) {
-      // 빈 원 색상 계산
-      const emptyColorMap = {
-        'bg-[#4B7BEC]': 'bg-[#D9D9E8]',
-        'bg-[#38B2AC]': 'bg-[#D9E8E7]',
-        'bg-[#E53E3E]': 'bg-[#F5D3D3]',
-        'bg-[#ED8936]': 'bg-[#F9E2CD]',
-        'bg-[#6B46C1]': 'bg-[#DDD6F3]',
-        'bg-[#3182CE]': 'bg-[#D6E6F5]',
-        'bg-[#319795]': 'bg-[#D4EDE7]',
-        'bg-[#48BB78]': 'bg-[#D7F3DF]',
-        'bg-[#5A67D8]': 'bg-[#DFE1F8]',
-        'bg-[#F56565]': 'bg-[#FADDDD]',
-        'bg-[#DD6B21]': 'bg-[#F8E0CC]',
-        'bg-[#805AD5]': 'bg-[#E6DEF7]',
-        'bg-[#F05252]': 'bg-[#FBDADA]',
-        'bg-[#38A169]': 'bg-[#D6EFDF]'
-      };
-      return emptyColorMap[color] || 'bg-gray-200';
+    getCategoryEmptyColor() {
+      return this.categoryColors[this.currentCategory]?.empty || 'bg-gray-200';
+    },
+    getCategoryBorderColor() {
+      return this.categoryColors[this.currentCategory]?.border || 'border-gray-400';
     }
   }
 }
