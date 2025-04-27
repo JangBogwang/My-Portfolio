@@ -19,11 +19,14 @@
       <p class="mt-3 text-gray-600 text-sm">생성형 AI를 활용하여 나만의 소비 일기를 카드 형식으로 만들어주는 앱</p>
       
       <div class="mt-4">
-        <span class="inline-block bg-blue-100 text-blue-700 px-2 py-1 rounded text-xs mr-2 mb-2">SpringBoot</span>
-        <span class="inline-block bg-green-100 text-green-700 px-2 py-1 rounded text-xs mr-2 mb-2">FastAPI</span>
-        <span class="inline-block bg-yellow-100 text-orange-700 px-2 py-1 rounded text-xs mr-2 mb-2">GitLab CI/CD</span>
-        <span class="inline-block bg-orange-100 text-orange-700 px-2 py-1 rounded text-xs mr-2 mb-2">Docker</span>
-        <span class="inline-block bg-orange-100 text-orange-700 px-2 py-1 rounded text-xs mr-2 mb-2">EC2</span>
+        <!-- 프레임워크 -->
+        <span class="inline-block bg-[#F2EBFF] text-[#8258C4] px-2 py-1 rounded text-xs mr-2 mb-2">SpringBoot</span>
+        <span class="inline-block bg-[#F2EBFF] text-[#8258C4] px-2 py-1 rounded text-xs mr-2 mb-2">FastAPI</span>
+
+        <!-- 인프라 -->
+        <span class="inline-block bg-[#FFF3EA] text-[#C7743F] px-2 py-1 rounded text-xs mr-2 mb-2">GitLab CI/CD</span>
+        <span class="inline-block bg-[#FFF3EA] text-[#C7743F] px-2 py-1 rounded text-xs mr-2 mb-2">Docker</span>
+        <span class="inline-block bg-[#FFF3EA] text-[#C7743F] px-2 py-1 rounded text-xs mr-2 mb-2">EC2</span>
       </div>
       
       <ul class="mt-4 pl-5 text-gray-600 text-sm list-disc">
@@ -62,10 +65,10 @@
       <p class="mt-3 text-gray-600 text-sm">WebRTC 기술과 STT, LLM 기술을 활용한 토론 교육 플랫폼</p>
       
       <div class="mt-4">
-        <span class="inline-block bg-green-100 text-green-800 px-2 py-1 rounded text-xs mr-2 mb-2">SpringBoot</span>
-        <span class="inline-block bg-yellow-100 text-yellow-800 px-2 py-1 rounded text-xs mr-2 mb-2">FastAPI</span>
-        <span class="inline-block bg-indigo-100 text-indigo-800 px-2 py-1 rounded text-xs mr-2 mb-2">STT(whisper 모델)</span>
-        <span class="inline-block bg-indigo-100 text-indigo-800 px-2 py-1 rounded text-xs mr-2 mb-2">WebRTC(openvidu)</span>
+        <span class="inline-block bg-[#F2EBFF] text-[#8258C4] px-2 py-1 rounded text-xs mr-2 mb-2">SpringBoot</span>
+        <span class="inline-block bg-[#F2EBFF] text-[#8258C4] px-2 py-1 rounded text-xs mr-2 mb-2">FastAPI</span>
+        <span class="inline-block bg-[#EDF1FF] text-[#3C5FCB] px-2 py-1 rounded text-xs mr-2 mb-2">STT(whisper 모델)</span>
+        <span class="inline-block bg-[#EDF1FF] text-[#3C5FCB] px-2 py-1 rounded text-xs mr-2 mb-2">WebRTC(openvidu)</span>
       </div>
       
       <ul class="mt-4 pl-5 text-gray-600 text-sm list-disc">
@@ -103,11 +106,11 @@
       <p class="mt-3 text-gray-600 text-sm">식단 관리 및 분석 대시보드 제공, 생성형 AI 기반 식단 추천 서비스</p>
       
       <div class="mt-4">
-        <span class="inline-block bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs mr-2 mb-2">Spring Boot</span>
-        <span class="inline-block bg-purple-100 text-purple-800 px-2 py-1 rounded text-xs mr-2 mb-2">FastAPI</span>
-        <span class="inline-block bg-teal-100 text-teal-800 px-2 py-1 rounded text-xs mr-2 mb-2">MongoDB</span>
-        <span class="inline-block bg-teal-100 text-teal-800 px-2 py-1 rounded text-xs mr-2 mb-2">MySQL</span>
-        <span class="inline-block bg-teal-100 text-teal-800 px-2 py-1 rounded text-xs mr-2 mb-2">ChatGPT</span>
+        <span class="inline-block bg-[#F2EBFF] text-[#8258C4] px-2 py-1 rounded text-xs mr-2 mb-2">Spring Boot</span>
+        <span class="inline-block bg-[#F2EBFF] text-[#8258C4] px-2 py-1 rounded text-xs mr-2 mb-2">FastAPI</span>
+        <span class="inline-block bg-[#E2FAF5] text-[#3EB99E] px-2 py-1 rounded text-xs mr-2 mb-2">MongoDB</span>
+        <span class="inline-block bg-[#E2FAF5] text-[#3EB99E] px-2 py-1 rounded text-xs mr-2 mb-2">MySQL</span>
+        <span class="inline-block bg-[#EDF1FF] text-[#3C5FCB] px-2 py-1 rounded text-xs mr-2 mb-2">ChatGPT</span>
       </div>
       
       <ul class="mt-4 pl-5 text-gray-600 text-sm list-disc">
@@ -146,17 +149,17 @@
       <p class="mt-3 text-gray-600 text-sm">MBTI와 사용자 취향 협업 필터링을 활용한 콘텐트 추천 서비스</p>
       
       <div class="mt-4">
-        <span class="inline-block bg-blue-100 text-blue-700 px-2 py-1 rounded text-xs mr-2 mb-2">FASTAPI</span>
-        <span class="inline-block bg-red-100 text-red-700 px-2 py-1 rounded text-xs mr-2 mb-2">Kafka</span>
-        <span class="inline-block bg-orange-100 text-orange-700 px-2 py-1 rounded text-xs mr-2 mb-2">React</span>
-        <span class="inline-block bg-orange-100 text-orange-700 px-2 py-1 rounded text-xs mr-2 mb-2">Github Action</span>
+        <span class="inline-block bg-[#F2EBFF] text-[#8258C4] px-2 py-1 rounded text-xs mr-2 mb-2">FASTAPI</span>
+        <span class="inline-block bg-[#FFF3EA] text-[#C7743F] px-2 py-1 rounded text-xs mr-2 mb-2">Kafka</span>
+        <span class="inline-block bg-[#EDF1FF] text-[#3C5FCB] px-2 py-1 rounded text-xs mr-2 mb-2">React</span>
+        <span class="inline-block bg-[#EDF1FF] text-[#3C5FCB] px-2 py-1 rounded text-xs mr-2 mb-2">Github Action</span>
       </div>
       
       <ul class="mt-4 pl-5 text-gray-600 text-sm list-disc">
         <li class="mb-1">MBTI 유형별 텍스트 K-means 클러스터링, 영화 상세 데이터와 매칭</li>
         <li class="mb-1">사용자 선호 영화와 결합하여 추천 결과 생성</li>
         <li class="mb-1">CQRS 패턴을 적용한 서버 구성</li>
-        <li class="mb-1">MSA 방식의 아키텍쳐쳐</li>
+        <li class="mb-1">MSA 방식의 아키텍쳐</li>
       </ul>
       
       <div class="mt-4 flex gap-3">
