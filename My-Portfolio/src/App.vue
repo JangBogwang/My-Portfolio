@@ -74,3 +74,20 @@ const links = [
   }
 ];
 </script>
+
+<style>
+@media print {
+    header {
+      position: static !important; /* fixed나 absolute 대신 static으로 변경 */
+      display: block;
+      margin-bottom: 20px;
+    }
+    body {
+      padding-top: 0 !important; /* 기존 패딩 제거 */
+    }
+    /* 필요 없는 요소 숨기기 */
+    .no-print {
+      display: none !important;
+    }
+  }
+</style>
