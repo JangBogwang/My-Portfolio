@@ -1,18 +1,17 @@
 <template>
-  <div class="flex flex-col min-h-screen bg-gradient-to-br from-orange-50 to-orange-100">
+  <div class="flex flex-col min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 print:bg-white">
     <main class="pt-0">
-      <RouterView/>
+      <div class="w-full max-w-4xl mx-auto px-4 sm:px-6 md:px-8">
+        <RouterView />
+      </div>
     </main>
   </div>
 </template>
 
 
+
 <script setup>
 import { RouterLink } from 'vue-router';
-import profileImage from '@/assets/image/profile.jpg';
-
-const name = 'Jang Bo Gwang';
-const jobTitle = 'Web Developer';
 
 const links = [
   {

@@ -7,37 +7,8 @@
           <!-- Page 1: Profile + Contact -->
           <div class="page bg-white p-8 mx-4 print:shadow-none print:mx-0 print:mb-0 print:rounded-none">
             <!-- 프로필 섹션 -->
-            <div class="profile-section">
-              <img
-                :src="profileImage"
-                alt="Profile"
-                class="profile-image"
-              />
-              <div class="profile-info text-left">
-                <h1 class="text-4xl font-bold text-slate-900 mb-2 tracking-tight">{{ name }}</h1>
-                <h2 class="text-xl font-semibold text-blue-600 mb-3 uppercase tracking-wide">{{ jobTitle }}</h2>
-                <p class="font-bold text-slate-600 text-base leading-relaxed max-w-md">
-                  대화(Chat)를 통해 기술의 가치를 실현하는 개발자
-                </p>
-              </div>
-            </div>
-            <div class="pro-summary mb-8 bg-white rounded-2xl border border-blue-100 shadow-sm p-4">
-              <div class="flex items-center mb-4">
-                <!-- 개선된 아이콘 -->
-                <div class="w-7 h-7 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mr-3">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" stroke="currentColor"
-                      stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
-                    <path d="M8 12h8M8 8h8M8 16h5"/>
-                  </svg>
-                </div>
-                <h3 class="text-lg font-semibold text-slate-800">
-                  간단 소개
-                </h3>
-              </div>
-              <!-- 본문 -->
-              <p class="text-slate-600 leading-relaxed">
-                  대화와 소통 중심의 서비스를 지향하는 개발자입니다. 생성형 AI와 LLM 기술을 활용해 사용자에게 실질적인 가치를 제공하는 데 집중하며, 팀 내 소통과 협업을 통해 더 나은 결과를 만들어냅니다.
-              </p>
+            <div class="mb-8">
+              <Profile :name="name" :jobTitle="jobTitle" :profileImage="profileImage" />
             </div>
             <!-- 연락처 정보 -->
             <div class="mb-8">
@@ -74,9 +45,8 @@
             </div>
           </div>
 
-
           <!-- Page 4: Projects -->
-          <div class="page p-8 md:p-12 print:p-8">
+          <div class="page p-8 md:p-12 print:hidden">
             <div class="mb-8">
               <h2 class="text-3xl font-bold text-slate-900 mb-6 pb-3 border-b-2 border-blue-600 relative">
                 프로젝트
@@ -84,6 +54,12 @@
               </h2>
             </div>
             <Project />
+          </div>
+
+          
+           <!-- Page 5: Projects Detail-->
+          <div class="page p-8 md:p-12 print:p-8">
+            <MVTI />
           </div>
         </div>
       </div>
@@ -99,6 +75,9 @@ import Education     from '@/components/educationComponent.vue'
 import Experience    from '@/components/experienceComponent.vue'
 import Prize         from '@/components/prizeComponent.vue'
 import Contact       from '@/components/contactComponent.vue'
+import MVTI from '@/components/MVTIComponent.vue'
+import Profile from '@/components/ProfileComponent.vue'
+import { ref } from 'vue'
 
 const name = 'Jang Bo Gwang'
 const jobTitle = 'AI Backend Developer'
@@ -377,6 +356,27 @@ import profileImage from '@/assets/image/profile.jpg'
     color: #000 !important;
     border: 1px solid #888 !important;
     padding: 0.4rem 0.75rem !important;
+    font-size: 0.8rem !important;
+  }
+
+    .contact-icon svg {
+    fill: black !important;
+    stroke: black !important;
+    width: 1rem !important;
+    height: 1rem !important;
+  }
+
+  .contact-grid {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 0.5rem !important;
+  }
+
+  .contact-card {
+    all: unset;
+    display: flex !important;
+    gap: 0.5rem !important;
+    align-items: flex-start !important;
     font-size: 0.8rem !important;
   }
 }

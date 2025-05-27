@@ -2,7 +2,7 @@
   <!-- 프로젝트 섹션 -->
   <section class="mt-8">
     <!-- 프로젝트 그리드 컨테이너 -->
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <div class="grid grid-cols-1 gap-6">
       <div
         v-for="project in projects"
         :key="project.title"
@@ -55,6 +55,19 @@
               <line x1="10" y1="14" x2="21" y2="3" />
             </svg>
           </a>
+          <a
+            v-if="project.video"
+            :href="project.video"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-indigo-600 text-sm font-medium hover:underline flex items-center gap-1"
+          >
+            Video
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M10 8l6 4-6 4V8z" />
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke="currentColor" fill="none" />
+            </svg>
+          </a>
         </div>
       </div>
     </div>
@@ -76,13 +89,14 @@ const projects = [
       { text: 'EC2', class: 'bg-[#FFF3EA] text-[#C7743F] border-[#FED7AA]' },
     ],
     points: [
-      'Youtube 영상 자막 기반 학습 콘텐츠 생성 파이프라인 구축',
-      'Kafka 비동기 처리 및 SSE 실시간 알림 구현',
-      'Qdrant와 RAG 구조를 활용한 문맥 기반 질문 응답 시스템',
-      'MSA 기반 확장 가능 구조 설계 및 운영 최적화'
+      'LLM기반 학습 콘텐츠 생성 파이프라인',
+      'Kafka 비동기 처리 및 SSE 실시간 알림',
+      'Qdrant와 RAG 구조를 활용한 챗봇 구현',
+      'MSA 기반 확장 가능 구조 설계'
     ],
     github: '#',
     detail: '#',
+    video: 'https://youtu.be/5n1sNibVcZI',
   },
   {
     title: 'SOTORY',
@@ -99,10 +113,11 @@ const projects = [
     points: [
       'Gitlab과 docker을 활용한 CI/CD 구현',
       'fail2ban, nginx, https를 활용한 보안',
-      '예산 조회, 레포트 조회 API 개발(spring boot)',
+      '예산 조회, 레포트 조회 API 개발',
     ],
     github: '#',
     detail: '#',
+    video: '#',
   },
   {
     title: '토마톡',
@@ -115,11 +130,12 @@ const projects = [
       { text: 'WebRTC(openvidu)', class: 'bg-[#EDF1FF] text-[#3C5FCB] border-[#C7D7FE]' },
     ],
     points: [
-      'WebSocket을 통한 실시간 STT(whisper) 변환 기능',
-      '변환된 발언 텍스트 요약 및 LLM 기반 평가 API 구현',
+      'WebSocket을 통한 실시간 STT 변환 기능',
+      '발언 요약 및 LLM 기반 평가 API 구현',
     ],
     github: '#',
     detail: '#',
+    video: '#',
   },
   {
     title: 'Nutirigo',
@@ -133,12 +149,13 @@ const projects = [
       { text: 'ChatGPT', class: 'bg-[#EDF1FF] text-[#3C5FCB] border-[#C7D7FE]' },
     ],
     points: [
-      '식품의약품안전처 제공 데이터 활용 영양성분 DB 구축',
-      '사용자 식단을 바탕으로 영양분 섭취량 및 칼로리 섭취량 분석',
-      '섭취한 영양 성분 및 DB 바탕 사용자의 식단 추천',
+      '공공데이터 활용 영양성분 DB 구축',
+      '사용자 영양분 및 칼로리 섭취량 분석',
+      '섭취한 영양 성분 기준 식단 추천',
     ],
     github: 'https://github.com/ssafitjs',
     detail: '#',
+    video: 'https://youtu.be/jLddzWXDmow',
   },
   {
     title: 'MVTI',
@@ -151,12 +168,14 @@ const projects = [
       { text: 'Github Action', class: 'bg-[#EDF1FF] text-[#3C5FCB] border-[#C7D7FE]' },
     ],
     points: [
-      'MBTI 유형별 텍스트 K-means 클러스터링, 영화 상세 데이터와 매칭',
+      'MBTI 유형별 텍스트 K-means 클러스터링',
+      '텍스트 유사도 기반 추천 시스템 개발',
       '사용자 선호 영화와 결합하여 추천 결과 생성',
       'CQRS 패턴을 적용한 MSA 방식의 서버 구성'
     ],
     github: 'https://github.com/MVTI-MovieAndVideo-Recommender-Platform',
     detail: '#',
+    video: 'https://youtu.be/aIA7bUbfYXA',
   },
 ];
 </script>
