@@ -77,17 +77,30 @@ const links = [
 
 <style>
 @media print {
-    header {
-      position: static !important; /* fixed나 absolute 대신 static으로 변경 */
-      display: block;
-      margin-bottom: 20px;
-    }
-    body {
-      padding-top: 0 !important; /* 기존 패딩 제거 */
-    }
-    /* 필요 없는 요소 숨기기 */
-    .no-print {
-      display: none !important;
-    }
+  header {
+    position: static !important;
+    display: block;
+    margin-bottom: 10px;
   }
+  
+  main {
+    padding-top: 0 !important; /* 여기가 중요: main의 상단 패딩 제거 */
+  }
+  
+  body, html {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  
+  /* 필요 없는 요소 숨기기 */
+  .no-print {
+    display: none !important;
+  }
+  
+  /* 인쇄 시 배경색과 그라데이션 적용 (선택사항) */
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+}
 </style>
