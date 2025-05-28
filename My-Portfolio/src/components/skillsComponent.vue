@@ -1,110 +1,69 @@
 <template>
-  <!-- Skills Component with improved compact design -->
-  <div class="skills-section">
-    <div class="skills-grid">
-      <!-- 언어 분야 카드 -->
-      <div class="skill-card" @click="openModal('language')">
-        <div class="card-header">
-          <div class="category-indicator language"></div>
-          <h3 class="category-title">언어 (Language)</h3>
-        </div>
-        <div class="skills-tags">
-          <span v-for="skill in skills.language" :key="skill.name" 
-                class="skill-tag blue">
-            {{ skill.name }}
-          </span>
-        </div>
-      </div>
-      
-      <!-- 프레임워크 분야 카드 -->
-      <div class="skill-card" @click="openModal('framework')">
-        <div class="card-header">
-          <div class="category-indicator framework"></div>
-          <h3 class="category-title">프레임워크 (Framework)</h3>
-        </div>
-        <div class="skills-tags">
-          <span v-for="skill in skills.framework" :key="skill.name" 
-                class="skill-tag purple">
-            {{ skill.name }}
-          </span>
-        </div>
-      </div>
-      
-      <!-- DB & 개발 도구 분야 카드 -->
-      <div class="skill-card" @click="openModal('database')">
-        <div class="card-header">
-          <div class="category-indicator database"></div>
-          <h3 class="category-title">DB & 개발 도구</h3>
-        </div>
-        <div class="skills-tags">
-          <span v-for="skill in skills.database" :key="skill.name" 
-                class="skill-tag teal">
-            {{ skill.name }}
-          </span>
-        </div>
-      </div>
-      
-      <!-- 인프라 분야 카드 -->
-      <div class="skill-card" @click="openModal('infrastructure')">
-        <div class="card-header">
-          <div class="category-indicator infrastructure"></div>
-          <h3 class="category-title">인프라 (Infrastructure)</h3>
-        </div>
-        <div class="skills-tags">
-          <span v-for="skill in skills.infrastructure" :key="skill.name" 
-                class="skill-tag orange">
-            {{ skill.name }}
-          </span>
-        </div>
-      </div>
-      
-      <!-- 협업 도구 분야 카드 -->
-      <div class="skill-card" @click="openModal('collaboration')">
-        <div class="card-header">
-          <div class="category-indicator collaboration"></div>
-          <h3 class="category-title">협업 도구</h3>
-        </div>
-        <div class="skills-tags">
-          <span v-for="skill in skills.collaboration" :key="skill.name" 
-                class="skill-tag blue">
-            {{ skill.name }}
-          </span>
-        </div>
+  <div>
+    <!-- 기술 스택 요약 카드 -->
+    <div class="skills-print-grid">
+      <div
+        v-for="(items, category) in skills"
+        :key="category"
+        class="border-l-4 p-4 bg-white rounded-lg shadow-sm cursor-pointer hover:bg-gray-50 transition"
+        :class="getCategoryBorderColor(category)"
+        @click="openModal(category)"
+      >
+        <h4 class="font-semibold text-base mb-2" :class="getCategoryTextColor(category)">
+          {{ modalTitleMap[category] }}
+        </h4>
+        <ul class="text-sm text-slate-600 space-y-1">
+          <li v-for="skill in items" :key="skill.name" class="flex items-center justify-between">
+            <span>{{ skill.name }}</span>
+            <span class="ml-2 flex">
+              <span class="dot-wrapper">
+                <svg
+                  v-for="i in 5"
+                  :key="i"
+                  width="8"
+                  height="8"
+                  viewBox="0 0 8 8"
+                  class="dot-svg"
+                >
+                  <circle
+                    cx="4"
+                    cy="4"
+                    r="3"
+                    :fill="i <= skill.level ? getCategoryColorCode(category) : '#e5e7eb'"
+                    stroke="#ccc"
+                    stroke-width="0.5"
+                  />
+                </svg>
+              </span>
+            </span>
+          </li>
+        </ul>
       </div>
     </div>
-      
-    <!-- 모달 컴포넌트 -->
-    <div v-if="modalVisible" class="modal-overlay" @click.self="closeModal">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h3 class="modal-title">{{ modalTitle }}</h3>
-          <button @click="closeModal" class="close-button">&times;</button>
-        </div>
-        
-        <div class="modal-body">
-          <div class="skills-detail-grid">
-            <div v-for="skill in currentSkills" :key="skill.name" 
-                class="skill-detail-card" 
-                :class="[getCategoryBorderColor()]">
-              <div class="skill-header">
-                <h4 class="skill-name" :class="getCategoryTextColor()">{{ skill.name }}</h4>
-                <div class="skill-level">
-                  <div v-for="i in 5" :key="i" 
-                      class="level-dot" 
-                      :class="i <= skill.level ? getCategoryColor() : 'bg-gray-200'">
-                  </div>
-                </div>
-              </div>
-              <p class="skill-description">{{ skill.description }}</p>
+
+    <!-- 모달 -->
+    <div v-if="modalVisible" class="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center">
+      <div class="bg-white rounded-lg p-6 w-full max-w-lg shadow-lg relative">
+        <button class="absolute top-2 right-3 text-slate-500 hover:text-slate-800" @click="closeModal">✕</button>
+        <h3 class="text-lg font-bold mb-4" :class="getCategoryTextColor(currentCategory)">
+          {{ modalTitleMap[currentCategory] }} 상세
+        </h3>
+        <ul class="space-y-2">
+          <li v-for="skill in currentSkills" :key="skill.name">
+            <div class="flex justify-between items-center">
+              <span class="font-medium">{{ skill.name }}</span>
+              <span class="flex">
+                <span
+                  v-for="i in 5"
+                  :key="i"
+                  class="w-2 h-2 rounded-full ml-1 inline-block"
+                  :style="{ backgroundColor: i <= skill.level ? getCategoryColorCode(currentCategory) : '#e5e7eb' }"
+                ></span>
+              </span>
             </div>
-          </div>
-        </div>
-        
-        <div class="modal-footer">
-          <button @click="closeModal" class="close-modal-button">
-            닫기
-          </button>
-        </div>
+            <p class="text-slate-600 text-sm mt-1">{{ skill.description }}</p>
+          </li>
+        </ul>
       </div>
     </div>
   </div>
@@ -117,31 +76,38 @@ export default {
     return {
       modalVisible: false,
       currentCategory: '',
+      modalTitleMap: {
+        language: '언어 (Language)',
+        framework: '프레임워크 (Framework)',
+        database: '데이터베이스 (DB)',
+        infrastructure: '인프라 (Infrastructure)',
+        collaboration: '협업 도구 (Collaboration)'
+      },
       categoryColors: {
         language: {
-          main: 'bg-blue-500',
           text: 'text-blue-700',
-          border: 'border-l-blue-500'
+          border: 'border-l-blue-500',
+          dot: 'bg-blue-500'
         },
         framework: {
-          main: 'bg-purple-500',
           text: 'text-purple-700',
-          border: 'border-l-purple-500'
+          border: 'border-l-purple-500',
+          dot: 'bg-purple-500'
         },
         database: {
-          main: 'bg-teal-500',
           text: 'text-teal-700',
-          border: 'border-l-teal-500'
+          border: 'border-l-teal-500',
+          dot: 'bg-teal-500'
         },
         infrastructure: {
-          main: 'bg-orange-500',
           text: 'text-orange-700',
-          border: 'border-l-orange-500'
+          border: 'border-l-orange-500',
+          dot: 'bg-orange-500'
         },
         collaboration: {
-          main: 'bg-blue-500',
-          text: 'text-blue-700',
-          border: 'border-l-blue-500'
+          text: 'text-rose-700',
+          border: 'border-l-rose-500',
+          dot: 'bg-rose-500'
         }
       },
       skills: {
@@ -161,34 +127,24 @@ export default {
           { name: 'MongoDB', level: 2, description: 'NoSQL DB 활용, 비정형 데이터' },
           { name: 'PostgreSQL', level: 2, description: '지리 정보, JSON 활용' },
           { name: 'Redis', level: 2, description: '인메모리 캐싱, 세션 관리' },
-          { name: 'Qdrant', level: 2, description: 'RAG 기반 LLM 구현에 활용용' }
+          { name: 'Qdrant', level: 2, description: 'RAG 기반 LLM 구현에 활용' }
         ],
         infrastructure: [
           { name: 'Docker', level: 3, description: '컨테이너 관리, Docker compose 활용' },
           { name: 'GitLab', level: 3, description: 'CI/CD 파이프라인, EC2 배포' },
           { name: 'AWS', level: 3, description: 'EC2, S3, RDS 운영' },
-          { name: 'Kafks', level: 2, description: 'MSA 서버 간 비동기 통신 구성'},
-          { name: 'Nginx', level: 3, description: '리버스 프록시, https 설정, fail2ban 연동 경험험'}
+          { name: 'Kafka', level: 2, description: 'MSA 서버 간 비동기 통신 구성' },
+          { name: 'Nginx', level: 3, description: '리버스 프록시, https 설정, fail2ban 연동 경험' }
         ],
         collaboration: [
           { name: 'Jira', level: 4, description: '애자일 이슈 관리' },
           { name: 'Git', level: 4, description: 'Git Flow 브랜치 전략' },
-          { name: 'Figma', level: 2, description: '디자인 및 차트 작성' },
+          { name: 'Figma', level: 2, description: '디자인 및 차트 작성' }
         ]
       }
     };
   },
   computed: {
-    modalTitle() {
-      const titles = {
-        language: '언어 (Language) 스킬',
-        framework: '프레임워크 (Framework) 스킬',
-        database: 'DB & 개발 도구 스킬',
-        infrastructure: '인프라 (Infrastructure) 스킬',
-        collaboration: '협업 도구 스킬'
-      };
-      return titles[this.currentCategory] || '기술 스택';
-    },
     currentSkills() {
       return this.skills[this.currentCategory] || [];
     }
@@ -203,21 +159,31 @@ export default {
       this.modalVisible = false;
       document.body.style.overflow = 'auto';
     },
-    getCategoryColor() {
-      return this.categoryColors[this.currentCategory]?.main || 'bg-gray-400';
+    getCategoryTextColor(category) {
+      return this.categoryColors[category]?.text || 'text-slate-800';
     },
-    getCategoryTextColor() {
-      return this.categoryColors[this.currentCategory]?.text || 'text-gray-800';
+    getCategoryBorderColor(category) {
+      return this.categoryColors[category]?.border || 'border-l-slate-300';
     },
-    getCategoryBorderColor() {
-      return this.categoryColors[this.currentCategory]?.border || 'border-l-gray-400';
+    getCategoryDotColor(category) {
+      return this.categoryColors[category]?.dot || 'bg-gray-400';
+    },
+    getCategoryColorCode(category) {
+      const map = {
+        language: '#3b82f6',      // blue-500
+        framework: '#8b5cf6',     // purple-500
+        database: '#14b8a6',      // teal-500
+        infrastructure: '#f97316',// orange-500
+        collaboration: '#f43f5e'  // rose-500
+      };
+      return map[category] || '#9ca3af'; // fallback: gray-400
     }
   }
 }
 </script>
 
+/* 정리된 Skills Component CSS */
 <style scoped>
-/* Section Title */
 .section-title {
   font-size: 1.5rem;
   font-weight: 600;
@@ -227,15 +193,12 @@ export default {
   border-bottom: 2px solid #e2e8f0;
 }
 
-/* Skills Grid - Compact Layout */
-.skills-grid {
+.skills-print-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* print에서도 고정 */
-  gap: 1.5rem;
-  margin-bottom: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
 }
 
-/* Skill Card - More Natural Design */
 .skill-card {
   background: white;
   border-radius: 8px;
@@ -252,25 +215,11 @@ export default {
   border-color: #cbd5e0;
 }
 
-/* Card Header */
-.card-header {
-  display: flex;
-  align-items: center;
-  margin-bottom: 0.75rem;
-}
-
-.category-indicator {
-  width: 4px;
-  height: 16px;
-  border-radius: 2px;
-  margin-right: 0.5rem;
-}
-
 .category-indicator.language { background-color: #3b82f6; }
 .category-indicator.framework { background-color: #8b5cf6; }
 .category-indicator.database { background-color: #14b8a6; }
 .category-indicator.infrastructure { background-color: #f97316; }
-.category-indicator.collaboration { background-color: #3b82f6; }
+.category-indicator.collaboration { background-color: #f43f5e; }
 
 .category-title {
   font-size: 0.95rem;
@@ -279,46 +228,18 @@ export default {
   margin: 0;
 }
 
-/* Skills Tags */
-.skills-tags {
+.dot-wrapper {
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
+  gap: 2px;
+  align-items: center;
 }
 
-.skill-tag {
-  padding: 0.25rem 0.75rem;
-  border-radius: 16px;
-  font-size: 0.8rem;
-  font-weight: 500;
-  transition: all 0.2s ease;
+.dot-svg {
+  display: inline-block;
+  vertical-align: middle;
 }
 
-.skill-tag.blue {
-  background-color: #eff6ff;
-  color: #1d4ed8;
-  border: 1px solid #dbeafe;
-}
-
-.skill-tag.purple {
-  background-color: #faf5ff;
-  color: #7c3aed;
-  border: 1px solid #e9d5ff;
-}
-
-.skill-tag.teal {
-  background-color: #f0fdfa;
-  color: #0f766e;
-  border: 1px solid #5eead4;
-}
-
-.skill-tag.orange {
-  background-color: #fff7ed;
-  color: #c2410c;
-  border: 1px solid #fed7aa;
-}
-
-/* Modal Styles */
+/* Modal 공통 */
 .modal-overlay {
   position: fixed;
   inset: 0;
@@ -340,12 +261,10 @@ export default {
   box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
 }
 
-.modal-header {
+.modal-header,
+.modal-footer {
   padding: 1.5rem;
   border-bottom: 1px solid #e5e7eb;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .modal-title {
@@ -369,62 +288,6 @@ export default {
   color: #374151;
 }
 
-.modal-body {
-  padding: 1.5rem;
-}
-
-.skills-detail-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1rem;
-}
-
-.skill-detail-card {
-  background: #f9fafb;
-  border-radius: 8px;
-  padding: 1rem;
-  border-left: 4px solid;
-}
-
-.skill-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 0.75rem;
-}
-
-.skill-name {
-  font-size: 1.1rem;
-  font-weight: 600;
-  margin: 0;
-}
-
-.skill-level {
-  display: flex;
-  gap: 0.25rem;
-}
-
-.level-dot {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-}
-
-.skill-description {
-  font-size: 0.9rem;
-  color: #6b7280;
-  line-height: 1.4;
-  margin: 0;
-}
-
-.modal-footer {
-  padding: 1rem 1.5rem;
-  border-top: 1px solid #e5e7eb;
-  background: #f9fafb;
-  display: flex;
-  justify-content: flex-end;
-}
-
 .close-modal-button {
   padding: 0.5rem 1rem;
   background: #e5e7eb;
@@ -433,49 +296,33 @@ export default {
   border-radius: 6px;
   font-weight: 500;
   cursor: pointer;
-  transition: background-color 0.2s;
 }
 
 .close-modal-button:hover {
   background: #d1d5db;
 }
 
+/* 인쇄 최적화 */
 @media print {
-  /* 전체 skills grid 레이아웃 고정 */
-  .skills-grid {
+  .skills-print-grid {
     display: grid !important;
     grid-template-columns: repeat(3, 1fr) !important;
-    gap: 1rem !important;
+    gap: 0.5rem !important;
+    page-break-inside: avoid;
   }
 
-  /* 각 skill 카드가 페이지 중간에서 잘리지 않도록 */
-  .skill-card {
-    break-inside: avoid !important;
-    page-break-inside: avoid !important;
-    padding: 0.75rem !important;
+  .skills-print-grid li {
+    break-inside: avoid;
+    page-break-inside: avoid;
+    font-size: 0.8rem;
+    line-height: 1.2;
   }
 
-  /* 태그 폰트 작게 */
-  .skill-tag {
-    font-size: 0.7rem !important;
-    padding: 0.25rem 0.5rem !important;
-    line-height: 1.2 !important;
+  .dot-svg {
+    width: 6px !important;
+    height: 6px !important;
   }
 
-  /* 제목도 살짝 줄이기 */
-  .category-title {
-    font-size: 0.85rem !important;
-  }
-
-  .section-title {
-    font-size: 1.2rem !important;
-    margin-bottom: 1rem !important;
-    padding-bottom: 0.25rem !important;
-  }
-}
-
-/* Print Optimization */
-@media print {
   .modal-overlay {
     display: none !important;
   }

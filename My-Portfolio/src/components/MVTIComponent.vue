@@ -2,25 +2,33 @@
   <ProjectDetailLayout
     :title="'MVTI'"
     :period="'2024.04.05 ~ 2024.06.25'"
-    :description="'사용자 MBTI 및 콘텐츠 취향을 기반으로한 추천 서비스'"
+    :description="'MBTI 및 콘텐츠 성향 기반 VOD 추천 서비스'"
     :tags="tags"
     :points="points"
     :role="role"
     :results="results"
-    :screenshots="screenshots"
+    :troubleshooting="troubleshooting"
+    :lessons="lessons"
+    :architectureImage="backend"
+    :serviceImages="serviceImages"
+    :github="'https://github.com/example/mvti'"
+    :video="'https://www.youtube.com/embed/aIA7bUbfYXA?si=wPM1E02euJg3x5ps'"
+    :detail="'https://notion.so/mvti-summary'"
   />
 </template>
+
 
 <script setup>
 import ProjectDetailLayout from '@/components/ProjectDetailLayout.vue'
 
-import sequence from '@/assets/image/Project1/sequence.png'
-import erd from '@/assets/image/Project1/erd.png'
-import backend from '@/assets/image/Project1/backend.png'
-import cloud from '@/assets/image/Project1/cloud.png'
+import sequence from '@/assets/image/MVTI/sequence.png'   // 아키텍처 다이어그램
+import erd from '@/assets/image/MVTI/erd.png'             // DB 구조
+import backend from '@/assets/image/MVTI/backend.png'     // 서버 구성
+import cloud from '@/assets/image/MVTI/cloud.png'         // 서비스 화면 (예시)
+import service1 from '@/assets/image/MVTI/service1.png'         // 서비스 화면 (예시)
+import service2 from '@/assets/image/MVTI/service2.png'         // 서비스 화면 (예시)
 
-const screenshots = [sequence, erd, backend, cloud]
-
+const serviceImages = [service1, service2]
 const tags = [
   { text: 'FastAPI', class: 'bg-[#F2EBFF] text-[#8258C4] border-[#D8C9F1]' },
   { text: 'Kafka', class: 'bg-[#FFF3EA] text-[#C7743F] border-[#FED7AA]' },
@@ -30,14 +38,19 @@ const tags = [
 ]
 
 const points = [
-  'LaBSE 모델을 사용한 텍스트 임베딩 기반 추천 시스템 개발',
-  'MBTI + 선호 콘텐츠 유사도 기반 하이브리드 추천 알고리즘 구현',
-  'Kafka 기반 데이터 스트림 처리 시스템 구축',
-  'MSA 방식 서버 아키텍처 및 CQRS 패턴 적용',
-  'MongoDB + RDS 혼합 DB 구성'
+  'LaBSE 기반 텍스트 임베딩을 활용한 콘텐츠 유사도 계산',
+  'MBTI + 콘텐츠 선호 이력 기반 하이브리드 추천 알고리즘 개발',
+  'Kafka 기반 데이터 파이프라인 및 Consumer 처리 로직 구현',
+  'MSA 아키텍처 및 CQRS 패턴 적용으로 서버 확장성 확보',
+  'MongoDB + MySQL 이중 DB 구성으로 조회 및 분석 분리'
 ]
 
-const role = 'PM으로서 일정 관리 및 개발 내역 정리, FastAPI 기반 추천 서버 개발, 크롤링 기반 데이터 수집 자동화'
+const role = 'PM으로서 전체 일정 및 이슈 관리, FastAPI 기반 추천 서버 개발, 크롤링 기반 영화 데이터 수집 자동화 기능 구현'
 
-const results = 'MBTI 데이터 기반 추천 알고리즘 구현, 영화 DB 및 추천 시스템 MVP 완성'
+const results = 'MBTI와 콘텐츠 유사도 기반의 추천 시스템 MVP 완성, 실제 유저 테스트를 통한 기능 검증 완료'
+
+const troubleshooting = 'Kafka Consumer 중복 처리 문제를 Offset Commit 구조 조정으로 해결하였고, 추천 정확도 향상을 위해 유사도 기준을 정규화함'
+
+const lessons = '추천 시스템과 MSA 환경에 대한 깊은 이해를 바탕으로 실서비스 수준의 구조 설계와 배포 경험을 쌓음'
 </script>
+

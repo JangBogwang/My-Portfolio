@@ -5,23 +5,26 @@
         <div class="max-w-5xl w-full rounded-xl overflow-hidden flex flex-col print:max-w-none print:rounded-none">
 
           <!-- Page 1: Profile + Contact -->
-          <div class="page bg-white p-8 mx-4 print:shadow-none print:mx-0 print:mb-0 print:rounded-none">
-            <!-- 프로필 섹션 -->
-            <div class="mb-8">
+          <div class="page bg-white p-4 mx-2 print:mx-0 print:shadow-none print:mb-0 print:rounded-none">
+            <!-- 프로필 -->
+            <div class="mb-4">
               <Profile :name="name" :jobTitle="jobTitle" :profileImage="profileImage" />
             </div>
-            <!-- 연락처 정보 -->
-            <div class="mb-8">
-              <Contact/>
+
+            <!-- 연락처 -->
+            <div class="mb-4">
+              <Contact />
             </div>
-            <div class="mb-8">
-              <h2 class="text-2xl font-bold text-slate-900 mb-6 pb-3 border-b-2 border-blue-600 relative">
+
+            <!-- 스킬 -->
+            <div class="mb-4">
+              <h2 class="section-title">
                 Skills
-                <span class="absolute bottom-0 left-0 w-16 bg-blue-400 transform"></span>
               </h2>
               <Skills />
             </div>
           </div>
+
 
           <!-- Page 3: Certification, Education, Experience, Prize -->
           <div class="page p-4 md:p-8 print:p-8">
@@ -190,10 +193,10 @@ import profileImage from '@/assets/image/profile.jpg'
 
 /* 각 블록(카드)을 문서 스타일로 정리 */
 .section-block {
-  padding: 1.25rem;
+  padding: 0.75rem 1rem;
   background: white;
   border: 1px solid #e5e7eb;
-  border-radius: 0.75rem;
+  border-radius: 0.5rem;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
@@ -201,7 +204,7 @@ import profileImage from '@/assets/image/profile.jpg'
 .entry-list {
   display: flex;
   flex-direction: column;
-  gap: 0.75rem;
+  gap: 0.5rem;
 }
 
 .entry-item {
@@ -217,7 +220,7 @@ import profileImage from '@/assets/image/profile.jpg'
 
 .entry-title {
   font-weight: 600;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   color: #111827;
 }
 
@@ -227,11 +230,11 @@ import profileImage from '@/assets/image/profile.jpg'
 }
 
 .entry-date {
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   white-space: nowrap;
   background: #1f2937;
   color: white;
-  padding: 0.25rem 0.65rem;
+  padding: 0.25rem 0.5rem;
   border-radius: 9999px;
   height: fit-content;
 }
@@ -297,20 +300,16 @@ import profileImage from '@/assets/image/profile.jpg'
   }
 
   .section-block {
-    padding: 0.75rem !important;
+    padding: 0.75rem 1rem !important;
     font-size: 0.8rem !important;
     box-shadow: none !important;
+    line-height: 1.3 !important;
+    word-break: break-word !important;
   }
 
   .section-title {
     font-size: 1rem !important;
     margin-bottom: 0.5rem !important;
-  }
-
-  .section-block * {
-    font-size: 0.8rem !important;
-    line-height: 1.3 !important;
-    word-break: break-word !important;
   }
 
    .project-card {
@@ -378,6 +377,20 @@ import profileImage from '@/assets/image/profile.jpg'
     gap: 0.5rem !important;
     align-items: flex-start !important;
     font-size: 0.8rem !important;
+  }
+
+  .entry-list {
+    gap: 0.5rem; /* gap-2 */
+  }
+
+  .entry-title {
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+
+  .entry-date {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.5rem;
   }
 }
 </style>

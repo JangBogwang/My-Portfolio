@@ -127,28 +127,28 @@
           <h2 class="text-2xl font-bold border-b-4 border-[#FF6B6B] pb-2 mb-4">
             추천 시스템 시퀀스 다이어그램
           </h2>
-          <img src="@/assets/image/Project1/sequence.png" style="width: 90%; height:auto; margin: 0 auto;">
+          <img src="@/assets/image/MVTI/sequence.png" style="width: 90%; height:auto; margin: 0 auto;">
         </section>
         
         <section class="mb-8">
           <h2 class="text-2xl font-bold border-b-4 border-[#FF6B6B] pb-2 mb-4">
             데이터 베이스 
           </h2>
-          <img src="@/assets/image/Project1/erd.png" style="width: 90%; height:auto; margin: 0 auto;">
+          <img src="@/assets/image/MVTI/erd.png" style="width: 90%; height:auto; margin: 0 auto;">
         </section>
 
         <section class="mb-8">
           <h2 class="text-2xl font-bold border-b-4 border-[#FF6B6B] pb-2 mb-4">
             백엔드 다이어그램
           </h2>
-          <img src="@/assets/image/Project1/backend.png" style="width: 80%; height:auto; margin: 0 auto;">
+          <img src="@/assets/image/MVTI/backend.png" style="width: 80%; height:auto; margin: 0 auto;">
         </section>
 
         <section class="mb-8">
           <h2 class="text-2xl font-bold border-b-4 border-[#FF6B6B] pb-2 mb-4">
             클라우드 다이어그램
           </h2>
-          <img src="@/assets/image/Project1/cloud.png" style="width: 100%; height:auto; margin: 0 auto;">
+          <img src="@/assets/image/MVTI/cloud.png" style="width: 100%; height:auto; margin: 0 auto;">
         </section>
       </div>
     </div>
