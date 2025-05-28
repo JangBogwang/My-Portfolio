@@ -1,31 +1,17 @@
 <template>
-  <div class="mb-8">
-    <!-- 섹션 헤더 (더 뚜렷한 구분선과 여백 추가) -->
-    <h4 class="font-bold text-2xl text-[#3A3A3A] border-b-2 pb-2 mb-4 flex items-center">
-            <span class="w-2 h-6 bg-[#8B6E5E] mr-3 rounded"></span>
-            자격
-        </h4>
-    
-    <!-- 인증서 목록 (간격 증가, 그림자 효과 추가) -->
-    <div class="space-y-3">
-      <div 
-        v-for="cert in certificates" 
-        :key="cert.id"
-        class="flex justify-between items-start mb-6"
-      >
-        <div class="flex-1">
-          <!-- 타이틀과 조직 분리 -->
-          <div class="flex flex-col md:flex-row md:items-center gap-1 md:gap-3">
-            <h5 class="font-bold text-[#3A2723] text-lg">{{ cert.title }}</h5>
-            <span class="text-[#6B4F4F] text-sm md:before:content-['|'] md:before:mr-3 md:before:text-[#C4B0A0]">{{ cert.organization }}</span>
-          </div>
-        </div>
-        <div class="bg-[#5D4037] text-white text-xs font-medium px-4 py-2 rounded-full whitespace-nowrap ml-3 shadow-sm">
-          {{ cert.date }}
-        </div>
+  <ul class="entry-list">
+    <li 
+      v-for="cert in certificates" 
+      :key="cert.id" 
+      class="entry-item"
+    >
+      <div class="entry-text">
+        <p class="entry-title">{{ cert.title }}</p>
+        <p class="entry-sub">{{ cert.organization }}</p>
       </div>
-    </div>
-  </div>
+      <span class="entry-date">{{ cert.date }}</span>
+    </li>
+  </ul>
 </template>
 
 <script setup>

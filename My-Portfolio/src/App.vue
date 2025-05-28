@@ -1,64 +1,17 @@
 <template>
-  <div class="flex flex-col min-h-screen bg-gradient-to-br from-orange-50 to-orange-100">
-    <!-- Top Navigation (고정 헤더) -->
-    <header class="fixed top-0 w-full bg-orange-50/90 backdrop-blur-md shadow-md border-b border-orange-100 z-50">
-      <div class="container mx-auto flex items-center justify-between p-4">
-        <!-- Profile Section -->
-        <div class="flex items-center space-x-4">
-          <div class="relative inline-block">
-            <img
-              :src="profileImage"
-              alt="Profile"
-              class="w-16 h-16 rounded-full object-cover shadow-md transition-transform hover:scale-105"
-            />
-            <div class="absolute bottom-0 right-0 bg-green-500 w-4 h-4 rounded-full border-2 border-white"></div>
-          </div>
-          <div>
-            <h2 class="text-xl font-semibold text-gray-800">{{ name }}</h2>
-            <p class="text-sm text-gray-500">{{ jobTitle }}</p>
-          </div>
-        </div>
-
-        <!-- Navigation Links -->
-        <nav class="flex space-x-4">
-          <RouterLink
-            v-for="link in links"
-            :key="link.route"
-            :to="link.route"
-            :class="[
-              'px-4 py-2 rounded-lg transition-all duration-200 group text-base',
-              link.hoverColor,
-              { [link.activeColor]: $route.path === link.route }
-            ]"
-          >
-            <span>{{ link.title }}</span>
-          </RouterLink>
-        </nav>
+  <div class="flex flex-col min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 print:bg-white">
+    <main class="pt-0">
+      <div class="w-full max-w-4xl mx-auto px-4 sm:px-6 md:px-8">
+        <RouterView />
       </div>
-    </header>
-
-    <!-- Main Content 영역에 패딩 추가 (헤더 높이 보정) -->
-    <main class="pt-24">
-        <RouterView/>
     </main>
-
-    <!-- Footer -->
-    <footer class="bg-orange-50 py-6 border-t border-orange-100">
-      <div class="container mx-auto text-center">
-        <p class="text-sm text-gray-600">
-          © 2024 Jang Bo Gwang | Web Developer
-        </p>
-      </div>
-    </footer>
   </div>
 </template>
 
+
+
 <script setup>
 import { RouterLink } from 'vue-router';
-import profileImage from '@/assets/image/profile.jpg';
-
-const name = 'Jang Bo Gwang';
-const jobTitle = 'Web Developer';
 
 const links = [
   {
@@ -77,30 +30,8 @@ const links = [
 
 <style>
 @media print {
-  header {
-    position: static !important;
-    display: block;
-    margin-bottom: 10px;
-  }
-  
-  main {
-    padding-top: 0 !important; /* 여기가 중요: main의 상단 패딩 제거 */
-  }
-  
-  body, html {
-    margin: 0 !important;
-    padding: 0 !important;
-  }
-  
-  /* 필요 없는 요소 숨기기 */
   .no-print {
     display: none !important;
-  }
-  
-  /* 인쇄 시 배경색과 그라데이션 적용 (선택사항) */
-  * {
-    -webkit-print-color-adjust: exact !important;
-    print-color-adjust: exact !important;
   }
 }
 </style>
