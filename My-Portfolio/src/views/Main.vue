@@ -59,10 +59,24 @@
             <Project />
           </div>
 
+           <!-- Page 5: Projects Detail-->
+          <div class="page p-8 md:p-12 print:p-8">
+            <Tomatalk />
+          </div>
           
            <!-- Page 5: Projects Detail-->
           <div class="page p-8 md:p-12 print:p-8">
+            <Nutrigo />
+          </div>
+
+          <!-- Page 5: Projects Detail-->
+          <div class="page p-8 md:p-12 print:p-8">
             <MVTI />
+          </div>
+
+                    <!-- Page 5: Projects Detail-->
+          <div class="page p-8 md:p-12 print:p-8">
+            <Crops />
           </div>
         </div>
       </div>
@@ -79,6 +93,9 @@ import Experience    from '@/components/experienceComponent.vue'
 import Prize         from '@/components/prizeComponent.vue'
 import Contact       from '@/components/contactComponent.vue'
 import MVTI from '@/components/MVTIComponent.vue'
+import Nutrigo from '@/components/NutrigoComponent.vue'
+import Crops from '@/components/AICropsComponent.vue'
+import Tomatalk from '@/components/TomatalkComponent.vue'
 import Profile from '@/components/ProfileComponent.vue'
 import { ref } from 'vue'
 

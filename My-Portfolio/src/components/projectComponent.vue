@@ -117,7 +117,7 @@ const projects = [
     ],
     github: '#',
     detail: '#',
-    video: '#',
+    video: 'https://youtu.be/RYJO-4Tl3qs?si=ecFNzxVoMlMyrHu3',
   },
   {
     title: '토마톡',
@@ -135,7 +135,7 @@ const projects = [
     ],
     github: '#',
     detail: '#',
-    video: '#',
+    video: 'https://youtu.be/P3BOmZuMerk',
   },
   {
     title: 'Nutirigo',
