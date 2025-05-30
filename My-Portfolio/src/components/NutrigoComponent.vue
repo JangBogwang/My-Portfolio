@@ -27,7 +27,7 @@ import service1 from '@/assets/image/Nutrigo/service1.png'         // 서비스 
 import service2 from '@/assets/image/Nutrigo/service2.png'         // 서비스 화면 (예시)
 
 
-const architectureImage = [server, userflow]
+const architectureImage = [server]
 const serviceImages = [service1, service2]
 
 const tags = [

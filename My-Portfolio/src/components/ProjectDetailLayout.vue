@@ -41,7 +41,7 @@
               <span class="w-1.5 h-1.5 bg-green-500 rounded-full mr-2"></span>
               서비스 주요 화면
             </h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+            <div class="service-images-grid grid grid-cols-1 md:grid-cols-1 gap-4">
               <div 
                 v-for="(img, idx) in project.serviceImages"
                 :key="idx"
@@ -50,7 +50,7 @@
                 <img
                   :src="img"
                   alt="서비스 이미지"
-                  class="w-full h-48 object-contain bg-gray-50 group-hover:scale-105 transition-transform duration-200 print:h-40"
+                  class="w-full object-contain bg-gray-50 group-hover:scale-105 transition-transform duration-200"
                 />
               </div>
             </div>
@@ -217,6 +217,21 @@ const project = defineProps({
   transform: translateY(-1px);
   shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
+
+  /* 이미지 최적화 */
+  img {
+    max-width: 100% !important;
+    height: auto !important;
+    max-height: 200pt !important;
+    object-fit: contain !important;
+    page-break-inside: avoid !important;
+  }
+  
+  /* 서비스 이미지 그리드 */
+  .grid-cols-1.md\\:grid-cols-2 {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 8pt !important;
+  }
 
 /* PDF 인쇄 최적화 */
 @media print {
