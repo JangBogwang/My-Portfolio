@@ -19,13 +19,10 @@
 <script setup>
 import ProjectDetailLayout from '@/components/ProjectDetailLayout.vue'
 
-import dataset from '@/assets/image/Crops/dataset.png'
-import data from '@/assets/image/Crops/data.png'
 import detection_test from '@/assets/image/Crops/detection_test.png'
-import tomato from '@/assets/image/Crops/tomato.png'
 import tomato_test from '@/assets/image/Crops/tomato_test.png'
 
-const serviceImages = [data, detection_test, tomato, tomato_test]
+const serviceImages = [ detection_test, tomato_test]
 
 const tags = [
   { text: 'YOLO v4', class: 'bg-[#F2EBFF] text-[#8258C4] border-[#D8C9F1]' },
@@ -40,7 +37,11 @@ const points = [
   'AI HUB 및 Kaggle, 직접 촬영을 통한 데이터 수집 및 전처리 수행'
 ]
 
-const role = '데이터 수집 및 전처리, YOLO 모델 학습, Jetson 기반 실시간 인식 및 결과 출력 서버 구현'
+const role = [
+  '데이터 수집 및 전처리', 
+  ' YOLO 모델 학습' , 
+   'Jetson nano 기반 실시간 인식 및 결과 출력 서버 구현'
+]
 
 const results = 'Jetson Nano 상에서 실시간 작물 인식 및 병충해 탐지 기능 완성, 웹을 통한 결과 출력 서버 구현 완료'
 

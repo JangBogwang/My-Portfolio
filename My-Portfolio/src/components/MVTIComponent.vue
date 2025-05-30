@@ -5,6 +5,7 @@
     :description="'MBTI 및 콘텐츠 성향 기반 VOD 추천 서비스'"
     :tags="tags"
     :points="points"
+    :teamCount="'4'"
     :role="role"
     :results="results"
     :troubleshooting="troubleshooting"
@@ -46,11 +47,14 @@ const points = [
   'MongoDB + MySQL 이중 DB 구성으로 조회 및 분석 분리'
 ]
 
-const role = 'PM으로서 전체 일정 및 이슈 관리, FastAPI 기반 추천 서버 개발, 크롤링 기반 영화 데이터 수집 자동화 기능 구현'
-
+const role = [
+  '전체 일정 및 Jira 기반 이슈 관리', 
+  'FastAPI 기반 추천 서버 개발', 
+  '영화 데이터 수집 크롤링 코드 개발'
+]
 const results = 'MBTI와 콘텐츠 유사도 기반의 추천 시스템 MVP 완성, 실제 유저 테스트를 통한 기능 검증 완료'
 
-const troubleshooting = 'Kafka Consumer 중복 처리 문제를 Offset Commit 구조 조정으로 해결하였고, 추천 정확도 향상을 위해 유사도 기준을 정규화함'
+const troubleshooting = 'AWS Lambda 서버의 Cold Start 문제를 해결하기 위해 일정 간격으로 가짜 호출을 발생시켜 함수가 항상 준비된 상태를 유지하도록 하는 Warm-up 방식을 적용'
 
 const lessons = '추천 시스템과 MSA 환경에 대한 깊은 이해를 바탕으로 실서비스 수준의 구조 설계와 배포 경험을 쌓음'
 </script>

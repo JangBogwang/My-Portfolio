@@ -64,6 +64,11 @@
             <Firzzle />
           </div>
 
+          <!-- Page 5: Projects Detail-->
+          <div class="page p-8 md:p-12 print:p-8" id="sotory">
+            <Sotory />
+          </div>
+
            <!-- Page 5: Projects Detail-->
           <div class="page p-8 md:p-12 print:p-8" id = "tomatalk">
             <Tomatalk />
@@ -100,6 +105,7 @@ import Contact       from '@/components/contactComponent.vue'
 import MVTI from '@/components/MVTIComponent.vue'
 import Nutrigo from '@/components/NutrigoComponent.vue'
 import Crops from '@/components/AICropsComponent.vue'
+import Sotory from '@/components/SotoryComponent.vue'
 import Tomatalk from '@/components/TomatalkComponent.vue'
 import Firzzle from '@/components/FirzzleComponent.vue'
 import Profile from '@/components/ProfileComponent.vue'

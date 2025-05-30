@@ -118,7 +118,7 @@
                 <h2 class="text-2xl font-bold border-b-4 border-[#88d66f] pb-2 mb-4">
                   유저 플로우 
                 </h2>
-                <img src="@/assets/image/Project3/userflow.png" style="width: 70%; height:auto; margin: 0 auto;">
+                <img src="@/assets/image/Nutrigo/userflow.png" style="width: 70%; height:auto; margin: 0 auto;">
               </section>
 
               <!-- 
@@ -126,7 +126,7 @@
                 <h2 class="text-2xl font-bold border-b-4 border-[#88d66f] pb-2 mb-4">
                   챗봇 시퀀스 다이어그램 
                 </h2>
-                <img src="@/assets/image/Project3/chatbot.png" style="width: 90%; height:auto; margin: 0 auto;">
+                <img src="@/assets/image/Nutrigo/chatbot.png" style="width: 90%; height:auto; margin: 0 auto;">
               </section>
               -->
 
@@ -134,21 +134,21 @@
                 <h2 class="text-2xl font-bold border-b-4 border-[#88d66f] pb-2 mb-4">
                   식단 관리 시퀀스 다이어그램 
                 </h2>
-                <img src="@/assets/image/Project3/diet.png" style="width: 90%; height:auto; margin: 0 auto;">
+                <img src="@/assets/image/Nutrigo/diet.png" style="width: 90%; height:auto; margin: 0 auto;">
               </section>
 
               <section class="mb-8">
                 <h2 class="text-2xl font-bold border-b-4 border-[#88d66f] pb-2 mb-4">
                   프로젝트 구성 
                 </h2>
-                <img src="@/assets/image/Project3/projectstructure.png" style="width: 90%; height:auto; margin: 0 auto;">
+                <img src="@/assets/image/Nutrigo/projectstructure.png" style="width: 90%; height:auto; margin: 0 auto;">
               </section>
       
               <section class="mb-8">
                 <h2 class="text-2xl font-bold border-b-4 border-[#88d66f] pb-2 mb-4">
                   데이터 베이스 
                 </h2>
-                <img src="@/assets/image/Project3/erd.png" style="width: 90%; height:auto; margin: 0 auto;">
+                <img src="@/assets/image/Nutrigo/erd.png" style="width: 90%; height:auto; margin: 0 auto;">
               </section>
       
             </div>

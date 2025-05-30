@@ -4,6 +4,7 @@
     :period="'25.01.13 ~ 25.02.21'"
     :description="'초중등 교사·학생을 위한 온라인 실시간 토론 교육 플랫폼'"
     :tags="tags"
+    :teamCount="'6'"
     :points="points"
     :role="role"
     :results="results"
@@ -36,13 +37,15 @@ const tags = [
 
 const points = [
   'WebRTC 기반 실시간 유저 매칭 및 토론 기능 구현',
-  'Whisper 기반 STT 기능 + GPT 발언 요약 및 피드백 시스템 설계',
-  'WebSocket으로 실시간 음성 스트리밍 및 처리 구조 구축',
-  'Jira를 활용한 전체 일정 조율 및 PM 역할 수행'
+  '단계별 학습 콘텐츠 구현',
+  'LLM을 활용한 학습 피드백 및 채점'
 ]
 
-const role = 'PM(팀장)으로 사용자 조사, 기획 주도, AI 기능 개발 및 일정 관리 전반을 총괄'
-
+const role = [
+  'Whisper 기반 STT 기능 + GPT 발언 요약 및 피드백 시스템 설계',
+  'WebSocket으로 실시간 음성 스트리밍 및 처리 구조 구축',
+  'LLM 기반 학습 콘텐츠 서비스 API 개발'
+]
 const results = '실시간 STT 기반 AI 피드백 시스템 구현 완료 및 시연 성공, Whisper + WebSocket 구조 최적화 경험 확보'
 
 const troubleshooting = 'Whisper 응답 지연 문제를 WebSocket 병렬 처리로 해결, 타겟 불명확 문제는 사용자 인터뷰와 서비스 분석을 통해 해결'
