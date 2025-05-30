@@ -1,5 +1,6 @@
 <template>
   <div class="flex flex-col min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 print:bg-white">
+    <RemoteNav />
     <main class="pt-0">
       <div class="w-full max-w-4xl mx-auto px-4 sm:px-6 md:px-8">
         <RouterView />
@@ -12,6 +13,7 @@
 
 <script setup>
 import { RouterLink } from 'vue-router';
+import RemoteNav from '@/components/RemoteNav.vue'
 
 const links = [
   {
@@ -19,13 +21,25 @@ const links = [
     title: 'Home',
     hoverColor: 'hover:bg-blue-50 hover:text-blue-600',
     activeColor: 'bg-blue-100/30 text-blue-700'
-  },{
-    route: '/project',
-    title: 'Projects',
-    hoverColor: 'hover:bg-purple-50 hover:text-purple-600',
-    activeColor: 'bg-purple-100/30 text-purple-700'
   }
 ];
+
+const navItems = [
+  { id: 'profile', label: '프로필' },
+  { id: 'skills', label: '스킬' },
+  { id: 'education', label: '교육' },
+  { id: 'projects', label: '프로젝트' },
+  { id: 'firzzle', label: 'Firzzle' },
+  { id: 'tomatalk', label: 'Tomatalk' },
+  { id: 'nutrigo', label: 'Nutrigo' },
+  { id: 'mvti', label: 'MVTI' },
+  { id: 'crops', label: 'Crops' }
+]
+
+function scrollTo(id) {
+  const el = document.getElementById(id)
+  if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+}
 </script>
 
 <style>

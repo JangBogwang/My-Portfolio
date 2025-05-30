@@ -20,11 +20,12 @@
 <script setup>
 import ProjectDetailLayout from '@/components/ProjectDetailLayout.vue'
 
-import architectureImage from '@/assets/image/Project3/projectstructure.png'
+import server from '@/assets/image/Project3/projectstructure.png'
 import userflow from '@/assets/image/Project3/userflow.png'
 import diet from '@/assets/image/Project3/diet.png'
 import erd from '@/assets/image/Project3/erd.png'
 
+const architectureImage = [server]
 const serviceImages = [userflow, diet, erd]
 
 const tags = [

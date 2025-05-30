@@ -2,20 +2,20 @@
   <!-- 프로젝트 섹션 -->
   <section class="mt-8">
     <!-- 프로젝트 그리드 컨테이너 -->
-    <div class="grid grid-cols-1 gap-6">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
       <div
         v-for="project in projects"
         :key="project.title"
         class="bg-white border border-slate-200 rounded-xl p-6 shadow-sm section-block"
       >
-        <div class="flex justify-between items-start mb-3">
+        <div class="flex justify-between items-start mb-2">
           <h3 class="text-base font-semibold text-slate-800">{{ project.title }}</h3>
           <span class="bg-gray-800 text-white text-xs font-medium px-3 py-1 rounded-full">{{ project.period }}</span>
         </div>
 
-        <p class="text-sm text-slate-600 mb-4 leading-relaxed">{{ project.description }}</p>
+        <p class="text-sm text-slate-600 mb-2 leading-relaxed">{{ project.description }}</p>
 
-        <div class="flex flex-wrap gap-2 mb-4">
+        <div class="flex flex-wrap gap-1 mb-2">
           <span
             v-for="tag in project.tags"
             :key="tag.text"
@@ -26,11 +26,7 @@
           </span>
         </div>
 
-        <ul class="list-disc pl-5 text-sm text-slate-600 space-y-1 mb-4">
-          <li v-for="point in project.points" :key="point">{{ point }}</li>
-        </ul>
-
-        <div class="flex gap-4">
+        <div class="flex gap-2">
           <a
             v-if="project.github"
             :href="project.github"
@@ -79,7 +75,7 @@ const projects = [
     {
     title: 'FIRZZLE',
     period: '2025.04 - 2025.05',
-    description: 'AI를 활용한 Youtube 영상 학습 보조 플랫폼',
+    description: 'Youtube 영상 기반 학습 콘텐츠 생성 플랫폼',
     tags: [
       { text: 'SpringBoot', class: 'bg-[#F2EBFF] text-[#8258C4] border-[#D8C9F1]' },
       { text: 'Kafka', class: 'bg-[#F2EBFF] text-[#8258C4] border-[#D8C9F1]' },
@@ -87,12 +83,6 @@ const projects = [
       { text: 'RAG', class: 'bg-[#FFF3EA] text-[#C7743F] border-[#FED7AA]' },
       { text: 'Docker', class: 'bg-[#FFF3EA] text-[#C7743F] border-[#FED7AA]' },
       { text: 'EC2', class: 'bg-[#FFF3EA] text-[#C7743F] border-[#FED7AA]' },
-    ],
-    points: [
-      'LLM기반 학습 콘텐츠 생성 파이프라인',
-      'Kafka 비동기 처리 및 SSE 실시간 알림',
-      'Qdrant와 RAG 구조를 활용한 챗봇 구현',
-      'MSA 기반 확장 가능 구조 설계'
     ],
     github: '#',
     detail: '#',
@@ -110,11 +100,6 @@ const projects = [
       { text: 'Docker', class: 'bg-[#FFF3EA] text-[#C7743F] border-[#FED7AA]' },
       { text: 'EC2', class: 'bg-[#FFF3EA] text-[#C7743F] border-[#FED7AA]' },
     ],
-    points: [
-      'Gitlab과 docker을 활용한 CI/CD 구현',
-      'fail2ban, nginx, https를 활용한 보안',
-      '예산 조회, 레포트 조회 API 개발',
-    ],
     github: '#',
     detail: '#',
     video: 'https://youtu.be/RYJO-4Tl3qs?si=ecFNzxVoMlMyrHu3',
@@ -128,10 +113,6 @@ const projects = [
       { text: 'FastAPI', class: 'bg-[#F2EBFF] text-[#8258C4] border-[#D8C9F1]' },
       { text: 'STT(whisper 모델)', class: 'bg-[#EDF1FF] text-[#3C5FCB] border-[#C7D7FE]' },
       { text: 'WebRTC(openvidu)', class: 'bg-[#EDF1FF] text-[#3C5FCB] border-[#C7D7FE]' },
-    ],
-    points: [
-      'WebSocket을 통한 실시간 STT 변환 기능',
-      '발언 요약 및 LLM 기반 평가 API 구현',
     ],
     github: '#',
     detail: '#',
@@ -148,13 +129,8 @@ const projects = [
       { text: 'MySQL', class: 'bg-[#E2FAF5] text-[#3EB99E] border-[#A7F3D0]' },
       { text: 'ChatGPT', class: 'bg-[#EDF1FF] text-[#3C5FCB] border-[#C7D7FE]' },
     ],
-    points: [
-      '공공데이터 활용 영양성분 DB 구축',
-      '사용자 영양분 및 칼로리 섭취량 분석',
-      '섭취한 영양 성분 기준 식단 추천',
-    ],
     github: 'https://github.com/ssafitjs',
-    detail: '#',
+    detail: '/Nutrigo',
     video: 'https://youtu.be/jLddzWXDmow',
   },
   {
@@ -166,12 +142,6 @@ const projects = [
       { text: 'Kafka', class: 'bg-[#FFF3EA] text-[#C7743F] border-[#FED7AA]' },
       { text: 'React', class: 'bg-[#EDF1FF] text-[#3C5FCB] border-[#C7D7FE]' },
       { text: 'Github Action', class: 'bg-[#EDF1FF] text-[#3C5FCB] border-[#C7D7FE]' },
-    ],
-    points: [
-      'MBTI 유형별 텍스트 K-means 클러스터링',
-      '텍스트 유사도 기반 추천 시스템 개발',
-      '사용자 선호 영화와 결합하여 추천 결과 생성',
-      'CQRS 패턴을 적용한 MSA 방식의 서버 구성'
     ],
     github: 'https://github.com/MVTI-MovieAndVideo-Recommender-Platform',
     detail: '#',

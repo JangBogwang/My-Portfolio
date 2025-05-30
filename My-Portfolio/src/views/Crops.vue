@@ -88,8 +88,8 @@
             데이터 셋 
           </h2>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <img src="@/assets/image/Project2/dataset.png" class="rounded-lg shadow-md">
-            <img src="@/assets/image/Project2/data.png" class="rounded-lg shadow-md">
+            <img src="@/assets/image/Crops/dataset.png" class="rounded-lg shadow-md">
+            <img src="@/assets/image/Crops/data.png" class="rounded-lg shadow-md">
           </div>
         </section>
 
@@ -100,15 +100,15 @@
           <div class="space-y-6">
             <div>
               <h3 class="font-bold text-lg">인식 테스트 (고추 잎)</h3>
-              <img src="@/assets/image/Project2/detection_test.png" class="rounded-lg shadow-md mx-auto">
+              <img src="@/assets/image/Crops/detection_test.png" class="rounded-lg shadow-md mx-auto">
             </div>
             <div>
               <h3 class="font-bold text-lg">인식 테스트 (토마토)</h3>
-              <img src="@/assets/image/Project2/tomato.png" class="rounded-lg shadow-md mx-auto">
+              <img src="@/assets/image/Crops/tomato.png" class="rounded-lg shadow-md mx-auto">
             </div>
             <div>
               <h3 class="font-bold text-lg">인식 테스트 (병충해)</h3>
-              <img src="@/assets/image/Project2/tomato_test.png" class="rounded-lg shadow-md mx-auto">
+              <img src="@/assets/image/Crops/tomato_test.png" class="rounded-lg shadow-md mx-auto">
             </div>
           </div>
         </section>

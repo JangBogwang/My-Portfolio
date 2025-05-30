@@ -19,13 +19,12 @@
 <script setup>
 import ProjectDetailLayout from '@/components/ProjectDetailLayout.vue'
 
-import dataset from '@/assets/image/Project2/dataset.png'
-import data from '@/assets/image/Project2/data.png'
-import detection_test from '@/assets/image/Project2/detection_test.png'
-import tomato from '@/assets/image/Project2/tomato.png'
-import tomato_test from '@/assets/image/Project2/tomato_test.png'
+import dataset from '@/assets/image/Crops/dataset.png'
+import data from '@/assets/image/Crops/data.png'
+import detection_test from '@/assets/image/Crops/detection_test.png'
+import tomato from '@/assets/image/Crops/tomato.png'
+import tomato_test from '@/assets/image/Crops/tomato_test.png'
 
-const architecture = dataset
 const serviceImages = [data, detection_test, tomato, tomato_test]
 
 const tags = [

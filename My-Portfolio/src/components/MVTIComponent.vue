@@ -9,7 +9,7 @@
     :results="results"
     :troubleshooting="troubleshooting"
     :lessons="lessons"
-    :architectureImage="backend"
+    :architectureImage="architectureImage"
     :serviceImages="serviceImages"
     :github="'https://github.com/example/mvti'"
     :video="'https://www.youtube.com/embed/aIA7bUbfYXA?si=wPM1E02euJg3x5ps'"
@@ -28,6 +28,7 @@ import cloud from '@/assets/image/MVTI/cloud.png'         // 서비스 화면 (�
 import service1 from '@/assets/image/MVTI/service1.png'         // 서비스 화면 (예시)
 import service2 from '@/assets/image/MVTI/service2.png'         // 서비스 화면 (예시)
 
+const architectureImage = [backend]
 const serviceImages = [service1, service2]
 const tags = [
   { text: 'FastAPI', class: 'bg-[#F2EBFF] text-[#8258C4] border-[#D8C9F1]' },

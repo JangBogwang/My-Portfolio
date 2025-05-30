@@ -28,14 +28,18 @@
         </div>
       </section>
 
-      <!-- 아키텍처 이미지 -->
-      <section v-if="project.architectureImage">
-        <h2 class="text-sm font-semibold text-slate-700 mb-0.5">아키텍처 다이어그램</h2>
-        <img
-          :src="project.architectureImage"
-          alt="아키텍처 이미지"
-          class="rounded-md border border-slate-200 shadow-sm w-full max-w-3xl mx-auto max-h-[260px] object-contain"
-        />
+            <!-- 서비스 UI 이미지 -->
+      <section v-if="project.serviceImages && project.serviceImages.length">
+        <h2 class="text-sm font-semibold text-slate-700 mb-0.5">서비스 주요 화면</h2>
+        <div class="grid grid-cols-2 gap-2">
+          <img
+            v-for="(img, idx) in project.serviceImages"
+            :key="idx"
+            :src="img"
+            alt="서비스 이미지"
+            class="rounded-md border border-slate-200 shadow-sm object-contain max-h-[180px] w-full"
+          />
+        </div>
       </section>
 
       <!-- 담당 역할 -->
@@ -52,18 +56,14 @@
         </ul>
       </section>
 
-      <!-- 서비스 UI 이미지 -->
-      <section v-if="project.serviceImages && project.serviceImages.length">
-        <h2 class="text-sm font-semibold text-slate-700 mb-0.5">서비스 주요 화면</h2>
-        <div class="grid grid-cols-2 gap-2">
-          <img
-            v-for="(img, idx) in project.serviceImages"
-            :key="idx"
-            :src="img"
-            alt="서비스 이미지"
-            class="rounded-md border border-slate-200 shadow-sm object-contain max-h-[180px] w-full"
-          />
-        </div>
+            <!-- 아키텍처 이미지 -->
+      <section v-if="project.architectureImage && project.architectureImage.length">
+        <h2 class="text-sm font-semibold text-slate-700 mb-0.5">다이어그램</h2>
+        <img
+          :src="project.architectureImage"
+          alt="다이어그램램 이미지"
+          class="rounded-md border border-slate-200 shadow-sm w-full max-w-3xl mx-auto max-h-[260px] object-contain"
+        />
       </section>
 
       <!-- 문제 해결 -->

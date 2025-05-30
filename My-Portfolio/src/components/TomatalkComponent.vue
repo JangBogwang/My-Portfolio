@@ -9,6 +9,7 @@
     :results="results"
     :troubleshooting="troubleshooting"
     :lessons="lessons"
+    :architectureImage="architectureImage"
     :serviceImages="serviceImages"
     :github="'#'"
     :video="'https://youtu.be/v8kCUuZXH4w'"
@@ -18,9 +19,11 @@
 
 <script setup>
 import ProjectDetailLayout from '@/components/ProjectDetailLayout.vue'
+import architecture from '@/assets/image/Tomatalk/architecture.png'
 import service1 from '@/assets/image/Tomatalk/service1.png'
 import service2 from '@/assets/image/Tomatalk/service2.png'
 
+const architectureImage = [architecture]
 const serviceImages = [service1, service2]
 
 const tags = [

@@ -5,7 +5,7 @@
         <div class="max-w-5xl w-full rounded-xl overflow-hidden flex flex-col print:max-w-none print:rounded-none">
 
           <!-- Page 1: Profile + Contact -->
-          <div class="page bg-white p-4 mx-2 print:mx-0 print:shadow-none print:mb-0 print:rounded-none">
+          <section class="page bg-white p-4 mx-2 print:mx-0 print:shadow-none print:mb-0 print:rounded-none" id="profile">
             <!-- 프로필 -->
             <div class="mb-4">
               <Profile :name="name" :jobTitle="jobTitle" :profileImage="profileImage" />
@@ -23,11 +23,11 @@
               </h2>
               <Skills />
             </div>
-          </div>
+          </section>
 
 
           <!-- Page 3: Certification, Education, Experience, Prize -->
-          <div class="page p-4 md:p-8 print:p-8">
+          <div class="page p-4 md:p-8 print:p-8" id="resume">
             <div class="print-grid">
               <div class="section-block">
                 <h2 class="section-title">교육</h2>
@@ -49,7 +49,7 @@
           </div>
 
           <!-- Page 4: Projects -->
-          <div class="page p-8 md:p-12 print:hidden">
+          <div class="page p-8 md:p-12 print:hidden" id = "projects">
             <div class="mb-8">
               <h2 class="text-3xl font-bold text-slate-900 mb-6 pb-3 border-b-2 border-blue-600 relative">
                 프로젝트
@@ -59,23 +59,28 @@
             <Project />
           </div>
 
+                     <!-- Page 5: Projects Detail-->
+          <div class="page p-8 md:p-12 print:p-8" id="firzzle">
+            <Firzzle />
+          </div>
+
            <!-- Page 5: Projects Detail-->
-          <div class="page p-8 md:p-12 print:p-8">
+          <div class="page p-8 md:p-12 print:p-8" id = "tomatalk">
             <Tomatalk />
           </div>
           
            <!-- Page 5: Projects Detail-->
-          <div class="page p-8 md:p-12 print:p-8">
+          <div class="page p-8 md:p-12 print:p-8" id = nutrigo>
             <Nutrigo />
           </div>
 
           <!-- Page 5: Projects Detail-->
-          <div class="page p-8 md:p-12 print:p-8">
+          <div class="page p-8 md:p-12 print:p-8" id = "mvti">
             <MVTI />
           </div>
 
                     <!-- Page 5: Projects Detail-->
-          <div class="page p-8 md:p-12 print:p-8">
+          <div class="page p-8 md:p-12 print:p-8" id = "crops">
             <Crops />
           </div>
         </div>
@@ -96,6 +101,7 @@ import MVTI from '@/components/MVTIComponent.vue'
 import Nutrigo from '@/components/NutrigoComponent.vue'
 import Crops from '@/components/AICropsComponent.vue'
 import Tomatalk from '@/components/TomatalkComponent.vue'
+import Firzzle from '@/components/FirzzleComponent.vue'
 import Profile from '@/components/ProfileComponent.vue'
 import { ref } from 'vue'
 
