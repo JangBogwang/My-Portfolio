@@ -21,9 +21,9 @@
 <script setup>
 import ProjectDetailLayout from '@/components/ProjectDetailLayout.vue'
 
-import arch from '@/assets/image/SOTORY/architecture.png'
-import service1 from '@/assets/image/SOTORY/service1.png'
-import service2 from '@/assets/image/SOTORY/service2.png'
+import arch from '@/assets/image/Sotory/architecture.png'
+import service1 from '@/assets/image/Sotory/service1.png'
+import service2 from '@/assets/image/Sotory/service2.png'
 
 const architectureImage = [arch]
 const serviceImages = [service1, service2]
