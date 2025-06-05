@@ -33,13 +33,13 @@ const certificates = [
     id: 3, 
     title: 'SQLD', 
     organization: '한국데이터산업진흥원',
-    date: '2025.04.05' 
+    date: '2024.04.05' 
   },
   { 
     id: 4, 
     title: 'ADsP', 
     organization: '한국데이터산업진흥원',
-    date: '2025.03.22' 
+    date: '2024.03.22' 
   }
 ];
 </script>
