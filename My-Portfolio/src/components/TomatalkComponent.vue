@@ -48,7 +48,7 @@ const role = [
 ]
 const results = '실시간 STT 기반 AI 피드백 시스템 구현 완료 및 시연 성공, Whisper + WebSocket 구조 최적화 경험 확보'
 
-const troubleshooting = 'Whisper 응답 지연 문제를 WebSocket 병렬 처리로 해결, 타겟 불명확 문제는 사용자 인터뷰와 서비스 분석을 통해 해결'
+const troubleshooting = 'Whisper 응답 지연 문제를 WebSocket 병렬 처리로 해결'
 
 const lessons = '기획부터 구현까지 전체 흐름 리딩 경험을 통해 기획안의 실현 가능성과 기술 연동 관점의 설계 사고 강화'
 </script>

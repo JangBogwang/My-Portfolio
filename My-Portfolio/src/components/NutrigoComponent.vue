@@ -58,7 +58,7 @@ const role = [
 ]
 const results = `• 식품 데이터를 활용한 식단 관리 서비스 구축\n• 칼로리·식품 데이터 기반 추천 챗봇 구현\n• 검색 이중화로 평균 응답 시간 4~5초 → 0초대로 단축`
 
-const troubleshooting = `• 유사도 검색 정확도 개선을 위해 프롬프트 최적화 및 데이터 기반 응답 생성 구현현\n• MongoDB 검색 속도 개선을 위해 Index 및 다단계 유사도 기준 적용`
+const troubleshooting = `• 유사도 검색 정확도 개선을 위해 프롬프트 최적화 및 데이터 기반 응답 생성 구현\n• MongoDB 검색 속도 개선을 위해 Index 및 다단계 유사도 기준 적용`
 
 const lessons = 'AI 기반 추천 시스템 설계 및 구현 경험, 챗봇 응답 품질 향상을 위한 프롬프트 엔지니어링 실전 적용'
 </script>
