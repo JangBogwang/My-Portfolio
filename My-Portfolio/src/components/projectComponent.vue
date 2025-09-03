@@ -40,18 +40,6 @@
             </svg>
           </a>
           <a
-            v-if="project.detail"
-            :href="project.detail"
-            class="text-indigo-600 text-sm font-medium hover:underline flex items-center gap-1"
-          >
-            Detail
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
-              <polyline points="15 3 21 3 21 9" />
-              <line x1="10" y1="14" x2="21" y2="3" />
-            </svg>
-          </a>
-          <a
             v-if="project.video"
             :href="project.video"
             target="_blank"
@@ -85,7 +73,6 @@ const projects = [
       { text: 'EC2', class: 'bg-[#FFF3EA] text-[#C7743F] border-[#FED7AA]' },
     ],
     github: '#',
-    detail: '#',
     video: 'https://youtu.be/5n1sNibVcZI',
   },
   {
@@ -101,7 +88,6 @@ const projects = [
       { text: 'EC2', class: 'bg-[#FFF3EA] text-[#C7743F] border-[#FED7AA]' },
     ],
     github: '#',
-    detail: '#',
     video: 'https://youtu.be/RYJO-4Tl3qs?si=ecFNzxVoMlMyrHu3',
   },
   {
@@ -115,7 +101,6 @@ const projects = [
       { text: 'WebRTC(openvidu)', class: 'bg-[#EDF1FF] text-[#3C5FCB] border-[#C7D7FE]' },
     ],
     github: '#',
-    detail: '#',
     video: 'https://youtu.be/P3BOmZuMerk',
   },
   {
@@ -130,7 +115,6 @@ const projects = [
       { text: 'ChatGPT', class: 'bg-[#EDF1FF] text-[#3C5FCB] border-[#C7D7FE]' },
     ],
     github: 'https://github.com/ssafitjs',
-    detail: '/Nutrigo',
     video: 'https://youtu.be/jLddzWXDmow',
   },
   {
@@ -144,7 +128,6 @@ const projects = [
       { text: 'Github Action', class: 'bg-[#EDF1FF] text-[#3C5FCB] border-[#C7D7FE]' },
     ],
     github: 'https://github.com/MVTI-MovieAndVideo-Recommender-Platform',
-    detail: '#',
     video: 'https://youtu.be/aIA7bUbfYXA',
   },
 ];
