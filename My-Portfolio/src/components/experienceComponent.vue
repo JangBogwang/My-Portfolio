@@ -16,7 +16,7 @@ const activities = [
     id: 1,
     title: 'SSAFYcial',
     description: 'SSAFY 소개 및 IT 관련 기사 작성성',
-    date: '2024.08 - 진행 중',
+    date: '2024.08 - 2025.06',
   },
   {
     id: 2,

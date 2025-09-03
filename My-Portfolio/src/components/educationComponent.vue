@@ -20,7 +20,7 @@ const educationList = [
     id: 1,
     title: 'SSAFY 12기',
     description: '종합 소프트웨어 역량 강화를 위한 교육 과정',
-    date: '2024.07 - 진행 중',
+    date: '2024.07 - 2025.07',
   },
   {
     id: 2,
