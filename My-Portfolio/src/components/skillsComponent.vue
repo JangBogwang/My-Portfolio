@@ -113,21 +113,21 @@ export default {
       skills: {
         language: [
           { name: 'Java', level: 4, description: '알고리즘(백준 플레티넘, SW역량테스트 B형), 자바 OOP 개념에 대한 이해' },
-          { name: 'Python', level: 3, description: '데이터 분석 및 크롤링 진행, AI 프로젝트 경험' },
+          { name: 'Python', level: 4, description: '데이터 분석 및 크롤링 진행, AI 프로젝트 경험' },
           { name: 'C', level: 2, description: '자료구조 및 알고리즘 구현, 포인터와 메모리 관리 이해' },
           { name: 'JavaScript', level: 3, description: '웹 프론트엔드 개발, DOM 조작, 비동기 프로그래밍 이해' }
         ],
         framework: [
           { name: 'Spring Boot', level: 4, description: 'CRUD/JWT 인증 구현, MyBatis/JPA 활용' },
           { name: 'Vue.js', level: 3, description: '컴포넌트 기반 UI 개발, Vuex 상태관리' },
-          { name: 'FastAPI', level: 3, description: 'ORM 활용, LLM 활용 프로젝트 진행' }
+          { name: 'FastAPI', level: 4, description: 'ORM 활용, LLM 활용 프로젝트 진행' }
         ],
         database: [
           { name: 'MySQL', level: 3, description: '관계형 DB 설계, 쿼리 최적화' },
           { name: 'MongoDB', level: 2, description: 'NoSQL DB 활용, 비정형 데이터' },
           { name: 'PostgreSQL', level: 2, description: '지리 정보, JSON 활용' },
           { name: 'Redis', level: 2, description: '인메모리 캐싱, 세션 관리' },
-          { name: 'Qdrant', level: 2, description: 'RAG 기반 LLM 구현에 활용' }
+          { name: 'Qdrant', level: 3, description: 'RAG 기반 LLM 구현에 활용' }
         ],
         infrastructure: [
           { name: 'Docker', level: 3, description: '컨테이너 관리, Docker compose 활용' },
