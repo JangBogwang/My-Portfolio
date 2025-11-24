@@ -25,14 +25,9 @@
             </div>
           </section>
 
-
           <!-- Page 3: Certification, Education, Experience, Prize -->
           <div class="page p-4 md:p-8 print:p-8" id="resume">
             <div class="print-grid">
-              <div class="section-block">
-                <h2 class="section-title">교육</h2>
-                <Education />
-              </div>
               <div class="section-block">
                 <h2 class="section-title">자격증</h2>
                 <Certification />
@@ -48,7 +43,23 @@
             </div>
           </div>
 
-          <!-- Page 4: Projects -->
+          <!-- Page 4: Certification, Education, Experience, Prize -->
+          <div class="page p-4 md:p-8 print:p-8" id="resume">
+            <div class="print-grid">
+              <div class="section-block">
+                <h2 class="section-title">교육</h2>
+                <Education />
+              </div>
+              <div class="section-block">
+                <h2 class="section-title">경력</h2>
+                <Career />
+              </div>
+            </div>
+          </div>
+
+
+
+          <!-- Page 5: Projects -->
           <div class="page p-8 md:p-12 print:hidden" id = "projects">
             <div class="mb-8">
               <h2 class="text-3xl font-bold text-slate-900 mb-6 pb-3 border-b-2 border-blue-600 relative">
@@ -59,7 +70,7 @@
             <Project />
           </div>
 
-                     <!-- Page 5: Projects Detail-->
+          <!-- Page 6: Projects Detail-->
           <div class="page p-8 md:p-12 print:p-8" id="firzzle">
             <Firzzle />
           </div>
@@ -102,6 +113,7 @@ import Education     from '@/components/educationComponent.vue'
 import Experience    from '@/components/experienceComponent.vue'
 import Prize         from '@/components/prizeComponent.vue'
 import Contact       from '@/components/contactComponent.vue'
+import Career  from '@/components/careerComponent.vue'
 import MVTI from '@/components/MVTIComponent.vue'
 import Nutrigo from '@/components/NutrigoComponent.vue'
 import Crops from '@/components/AICropsComponent.vue'

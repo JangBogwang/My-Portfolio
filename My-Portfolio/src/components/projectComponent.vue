@@ -72,7 +72,6 @@ const projects = [
       { text: 'Docker', class: 'bg-[#FFF3EA] text-[#C7743F] border-[#FED7AA]' },
       { text: 'EC2', class: 'bg-[#FFF3EA] text-[#C7743F] border-[#FED7AA]' },
     ],
-    github: '#',
     video: 'https://youtu.be/5n1sNibVcZI',
   },
   {
@@ -87,7 +86,6 @@ const projects = [
       { text: 'Docker', class: 'bg-[#FFF3EA] text-[#C7743F] border-[#FED7AA]' },
       { text: 'EC2', class: 'bg-[#FFF3EA] text-[#C7743F] border-[#FED7AA]' },
     ],
-    github: '#',
     video: 'https://youtu.be/RYJO-4Tl3qs?si=ecFNzxVoMlMyrHu3',
   },
   {
@@ -100,7 +98,6 @@ const projects = [
       { text: 'STT(whisper 모델)', class: 'bg-[#EDF1FF] text-[#3C5FCB] border-[#C7D7FE]' },
       { text: 'WebRTC(openvidu)', class: 'bg-[#EDF1FF] text-[#3C5FCB] border-[#C7D7FE]' },
     ],
-    github: '#',
     video: 'https://youtu.be/P3BOmZuMerk',
   },
   {

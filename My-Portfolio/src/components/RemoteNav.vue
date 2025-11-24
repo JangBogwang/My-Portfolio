@@ -30,6 +30,7 @@ const navItems = [
   { id: 'profile', label: '프로필' },
   { id: 'resume', label: '이력' },
   { id: 'projects', label: '프로젝트' },
+  { id: 'mofai', label: '외교부 AI'},
   { id: 'firzzle', label: 'Firzzle' },
   { id: 'sotory', label: 'Sotory' },
   { id: 'tomatalk', label: 'Tomatalk' },

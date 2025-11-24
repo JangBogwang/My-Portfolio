@@ -79,7 +79,7 @@ export default {
       modalTitleMap: {
         language: '언어 (Language)',
         framework: '프레임워크 (Framework)',
-        database: '데이터베이스 (DB)',
+        data: '데이터(Data)',
         infrastructure: '인프라 (Infrastructure)',
         collaboration: '협업 도구 (Collaboration)'
       },
@@ -94,7 +94,7 @@ export default {
           border: 'border-l-purple-500',
           dot: 'bg-purple-500'
         },
-        database: {
+        data: {
           text: 'text-teal-700',
           border: 'border-l-teal-500',
           dot: 'bg-teal-500'
@@ -122,12 +122,12 @@ export default {
           { name: 'Vue.js', level: 3, description: '컴포넌트 기반 UI 개발, Vuex 상태관리' },
           { name: 'FastAPI', level: 4, description: 'ORM 활용, LLM 활용 프로젝트 진행' }
         ],
-        database: [
+        data: [
           { name: 'MySQL', level: 3, description: '관계형 DB 설계, 쿼리 최적화' },
           { name: 'MongoDB', level: 2, description: 'NoSQL DB 활용, 비정형 데이터' },
-          { name: 'PostgreSQL', level: 2, description: '지리 정보, JSON 활용' },
-          { name: 'Redis', level: 2, description: '인메모리 캐싱, 세션 관리' },
-          { name: 'Qdrant', level: 3, description: 'RAG 기반 LLM 구현에 활용' }
+          { name: 'Redis', level: 2, description: '비동기 큐를 활용한 파이프라인 구축' },
+          { name: 'Qdrant', level: 3, description: 'RAG 기반 LLM 구현에 활용' },
+          { name: 'Airflow', level: 3, description: '데이터 수집 파이프라인 구축 경험' }
         ],
         infrastructure: [
           { name: 'Docker', level: 3, description: '컨테이너 관리, Docker compose 활용' },
@@ -172,7 +172,7 @@ export default {
       const map = {
         language: '#3b82f6',      // blue-500
         framework: '#8b5cf6',     // purple-500
-        database: '#14b8a6',      // teal-500
+        data: '#14b8a6',      // teal-500
         infrastructure: '#f97316',// orange-500
         collaboration: '#f43f5e'  // rose-500
       };
