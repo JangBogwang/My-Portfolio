@@ -60,7 +60,19 @@
 
 <script setup>
 const projects = [
-    {
+  {
+    title: 'MOFAI',
+    period: '2025.18 - 진행 중',
+    description: '외교부 내부 AI 플랫폼 구축 프로젝트',
+    tags: [
+      { text: 'FastAPI', class: 'bg-[#F2EBFF] text-[#8258C4] border-[#D8C9F1]' },
+      { text: 'Airflow', class: 'bg-[#F2EBFF] text-[#8258C4] border-[#D8C9F1]' },
+      { text: 'Redis', class: 'bg-[#FFF3EA] text-[#C7743F] border-[#FED7AA]' },
+      { text: 'Whisper', class: 'bg-[#FFF3EA] text-[#C7743F] border-[#FED7AA]' },
+      { text: 'Docker', class: 'bg-[#FFF3EA] text-[#C7743F] border-[#FED7AA]' },
+    ]
+  },  
+  {
     title: 'FIRZZLE',
     period: '2025.04 - 2025.05',
     description: 'Youtube 영상 기반 학습 콘텐츠 생성 플랫폼',

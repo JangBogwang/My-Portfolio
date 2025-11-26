@@ -71,6 +71,11 @@
           </div>
 
           <!-- Page 6: Projects Detail-->
+          <div class="page p-8 md:p-12 print:p-8" id="mofai">
+            <Mofai />
+          </div>
+
+          <!-- Page 6: Projects Detail-->
           <div class="page p-8 md:p-12 print:p-8" id="firzzle">
             <Firzzle />
           </div>
@@ -114,6 +119,7 @@ import Experience    from '@/components/experienceComponent.vue'
 import Prize         from '@/components/prizeComponent.vue'
 import Contact       from '@/components/contactComponent.vue'
 import Career  from '@/components/careerComponent.vue'
+import Mofai from '@/components/MofaiComponent.vue'
 import MVTI from '@/components/MVTIComponent.vue'
 import Nutrigo from '@/components/NutrigoComponent.vue'
 import Crops from '@/components/AICropsComponent.vue'
