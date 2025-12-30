@@ -62,7 +62,7 @@
 const projects = [
   {
     title: 'MOFAI',
-    period: '2025.18 - 진행 중',
+    period: '2025.08 - 2025.12',
     description: '외교부 내부 AI 플랫폼 구축 프로젝트',
     tags: [
       { text: 'FastAPI', class: 'bg-[#F2EBFF] text-[#8258C4] border-[#D8C9F1]' },

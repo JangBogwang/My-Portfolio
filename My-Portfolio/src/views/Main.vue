@@ -130,7 +130,7 @@ import Profile from '@/components/ProfileComponent.vue'
 import { ref } from 'vue'
 
 const name = 'Jang Bo Gwang'
-const jobTitle = 'AI Backend Developer'
+const jobTitle = 'Data Developer'
 import profileImage from '@/assets/image/profile.jpg'
 </script>
 
