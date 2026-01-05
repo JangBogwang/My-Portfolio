@@ -41,7 +41,7 @@ const careers = ref([
     id: 1,
     company: '바이브컴퍼니',
     team: '외교AI서비스팀',
-    period: '2025.08.11 - 재직중',
+    period: '2025.08.11 - 2026.01.06',
     employmentType: '계약직',
     tasks: [
       '외부데이터 수집 파이프라인 구축(Airflow)',
